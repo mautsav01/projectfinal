@@ -26,6 +26,10 @@ public class MainController {
     public String loginsinup(){
         return "loginsinup";
     }
+    @RequestMapping("/welcome1")
+    public String backloginsinup(){
+        return "cafetemplate";
+    }
     
     }
     

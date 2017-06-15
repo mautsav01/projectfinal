@@ -26,7 +26,7 @@
   </div>
   <div class="form">
     <h2>Login to your account</h2>
-    <form>
+    <form action="${pageContext.servletContext.contextPath}/welcome1" method="post">
       <input type="text" placeholder="Username"/>
       <input type="password" placeholder="Password"/>
       <button>Login</button>
