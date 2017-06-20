@@ -25,18 +25,38 @@
     <div class="tooltip">Sin-Up</div>
   </div>
   <div class="form">
-    <h2>Login to your account</h2>
+    <h2>Login to your account for</h2>
+     
+        
+    
+    
     <form action="${pageContext.servletContext.contextPath}/welcome1" method="post">
-      <input type="text" placeholder="Username"/>
+        
+<select>
+  <option value="Hotel">Hotel</option>
+  
+  <option value="Cafe/Resturant">Resturant/Cafe</option>
+</select>
+        <br><br>
+      <input type="text" placeholder="Hotel/Cafe-Name"/>   
+      <input type="text" placeholder="Email Address"/>
       <input type="password" placeholder="Password"/>
       <button>Login</button>
     </form>
   </div>
   <div class="form">
-    <h2>Create an account</h2>
+    <h2>Create an account for</h2>
     <form>
+        
+<select>
+  <option value="Hotel">Hotel</option>
+  
+  <option value="Cafe/Resturant">Resturant/Cafe</option>
+</select>
+        <br><br>
       <input type="text" placeholder="Username"/>
       <input type="password" placeholder="Password"/>
+       <input type="password" placeholder="Confirm-Password"/>
       <input type="email" placeholder="Email Address"/>
       <input type="tel" placeholder="Phone Number"/>
       <button>Register</button>

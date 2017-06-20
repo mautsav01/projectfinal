@@ -30,7 +30,10 @@ public class MainController {
     public String backloginsinup(){
         return "cafetemplate";
     }
-    
+    @RequestMapping("/welcome2")
+    public String exampletemplatecafe(){
+        return "cafetemplateexample";
+    }
     }
     
     

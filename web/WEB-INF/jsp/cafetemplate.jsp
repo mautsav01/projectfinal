@@ -25,7 +25,6 @@
             width: 50%;
             font-family: sans-serif;
             font-size: 18px;
-            border-radius: 20px;
         }
 
         textarea {
@@ -37,8 +36,6 @@
             font-family: sans-serif;
             font-size: 18px;
 
-            box-shadow: 30px;
-            border-radius: 20px;
 
         }
 
@@ -200,41 +197,23 @@
                     <div id="map"></div>
 
             
+                    <a href="https://mynasadata.larc.nasa.gov/latitudelongitude-finder/" target="_blank">Find latitude and longitude of your location</a>
             
-                    <p>Find us at some address at some place.</p>
+                        <br><br>        
+                  <form>
+                       
+                        <input type="text" placeholder="latitide">
+                        <br><br>
+                        <input type="text" placeholder="longitude">
+                       
+                    </form>
+                        
+                        
                     
-                    
-                    
-                    
-                    
-                    
-                    <div id="googleMap"  style="width:100%;height:400px;"></div>
-                    
-                       <script>
-
-      function initMap() {
-        var myLatLng = {lat: 27.7154, lng: 85.3123};
-
-        var map = new google.maps.Map(document.getElementById('googleMap'), {
-          zoom: 100,
-          center: myLatLng
-        });
-
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Hello World!'
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABPdpKdKP7UuTPhCKGBw99mWDQJZ35OYY&callback&callback=initMap">
-    </script>
-            
                     
                     
                     <p><span class="w3-tag">FYI!</span><textarea name='adress-description' placeholder='Adress-Description'></textarea> </p>
-
+                    <a href="${pageContext.servletContext.contextPath}/welcome2" target="_blank">Example of cafe template</a>
                 </div>
             </div>
        
@@ -242,9 +221,9 @@
         <!-- Footer -->
         <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
         </footer>
-</form>
 
-    
+
+    </body>
 
     <script>
         // Tabbed Menu
@@ -265,5 +244,5 @@
             </script>
                
     
-    </body>
+    
 </html>
