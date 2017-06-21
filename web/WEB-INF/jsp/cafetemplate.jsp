@@ -1,248 +1,313 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-    <style>
-        body, html {
-            height: 100%;
-            font-family: "Inconsolata", sans-serif;
-        }
-        .bgimg {
-            // background-position: center;
-            background-size: cover;
-            //  background-image: url("http://1.bp.blogspot.com/_6x3xxw-xghk/TSXoCSyJo3I/AAAAAAAAASs/FSWIeJ7cFKo/s1600/nipclub_coffee_house.jpg");
-            min-height: 2%;
-        }
-        .menu {
-            display: none;
-        }
-        input[type="text"] {
+<head>
+  <!-- Site made with Mobirise Website Builder v3.12.1, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v3.12.1, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+  <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/assets/bootstrap-material-design-font/css/material.css">
+  <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/assets/tether/tether.min.css">
+  <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/assets/animate.css/animate.min.css">
+  <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/assets/theme/css/style.css">
+  <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
 
-            margin: 10;
-
-            width: 50%;
-            font-family: sans-serif;
-            font-size: 18px;
-        }
-
-        textarea {
-            width: 70%;
-            height: 50%;
-            display: block;
-            margin: 0;
-
-            font-family: sans-serif;
-            font-size: 18px;
-
-
-        }
+<section class="mbr-section" id="form1-0" style="background-color: rgb(255, 255, 255); padding-top: 120px; padding-bottom: 120px;">
+    
+    <div class="mbr-section mbr-section__container mbr-section__container--middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-xs-center">
+                    <h3 class="mbr-section-title display-2">Cafe Form</h3>
+                    <small class="mbr-section-subtitle">Shape your future web project with sharp design and refine coded functions.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mbr-section mbr-section-nopadding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-10 col-lg-offset-1" data-form-type="formoid">
 
 
-    </style>
-    <body>
-       
+                    <div data-form-alert="true">
+                        <div hidden="" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center">Thanks for filling out form!
+We will reply you as soon as possible !!</div>
+                    </div>
+
+
+                    <form action="#cafebackend" method="post" data-form-title="CONTACT FORM">
+
+                        <input type="hidden" value="FNKfkEMenDBzal6ftLSw6EMzWSAABVJTYj5lpXThyD+oGPtogHkZcmTN/x+0cH6Si7Adur3FBIeWcB88qrIoQOJcEb0SqEwd6udnvqgOU/NaddfxJ8KrVTq4mBRZ1KZP" data-form-email="true">
+
+                        <div class="row row-sm-offset">
+
+                            <div class="col-xs-12 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Cafe Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+							<div class="col-xs-12 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Cafe Quotes<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+							
+							<div class="col-xs-12 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Cafe Address<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+
+							
+							
  
-        <!-- Links (sit on top) -->
-        <div class="w3-top">
-            <div class="w3-row w3-padding w3-black">
-                <div class="w3-col s3">
-                    <a href="#" class="w3-button w3-block w3-black">HOME</a>
-                </div>
-                <div class="w3-col s3">
-                    <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
-                </div>
-                <div class="w3-col s3">
-                    <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
-                </div>
-                <div class="w3-col s3">
-                    <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
-                </div>
-            </div>
-        </div>
-		
-		<form  method="post" action="_fileupload.jsp" enctype="multipart/form-data" onsubmit="myFunction()">
-            <center>
+ 
+                            <div class="col-xs-12 col-md-3">
+                                <div class="form-group">
+                                Cafe-Cover pic:     <input type="file" class="form-control" name="email"  data-form-field="Email" id="form1-0-email">
+                                </div>
+                            </div>
+							
+								<div class="col-xs-12 col-md-12">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Cafe Description<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+								<div class="col-xs-12 col-md-12">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Cafe features<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+<div class="col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+							
+<div class="col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+<div class="col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+<div class="col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+							
+						 <div class="col-xs-12 col-md-12">
+                                <div class="form-group">
+                                Food-Pic:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                </div>
+                            </div>
+							<br/><br/>
+			<div class=	"col-xs-12 col-md-12">
+			<a href="#" target="_blank">Click here for Location of Your Cafe</a>
+			
+			</div>				
+					<div class="col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Latitude<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+		<div class="col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Longitude<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
 
-                <br><br><br>
-                <p>  Cafe's Cover photo:<input type="file" name="file" class='w3-button'><input type="submit" value="upload"> <br><br>
-                    
-                    
-</p>
+		<div class="col-xs-12 col-md-12">
+                                
+                                    <label class="form-control-label" for="form1-0-name"><h1>Food Item</h1></label>
+                                
+                            </div>
+						<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+						<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+							
+								<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+						<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+	<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+						<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+	<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+						<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+	<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+						<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
 
-            </center>
-        </form>
+								<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+						<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+	<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+						<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+	<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+						<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+	<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+						<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+	<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
+						<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                </div>
+                            </div>
 
-    <center>
-        <input type="text" name="cafename" placeholder="Name of Cafe/Returant" class="form-control" > 
-        <br>
-        <br>
+<center> 							
+<div class="col-xs-12 col-md-12">
+    
+  <a href="${pageContext.servletContext.contextPath}/welcome2" target="_blank">Click Here For Example</a>
+   
+      
+  </div>
+   </center>							
 
-        
-        <input type="text" name="openingtime" placeholder="Opening Time" class="form-control" > 
-        <br>
-        <br>
+							
+						
+                        <div class="col-xs-12 col-md-12"><button type="submit" class="btn btn-primary">Submit</button></div>
 
-        <input type="text" name="cafeaddress" placeholder="Address" class='form-control'>
-    </center>
-
-
-
-    <div class="w3-sand w3-grayscale w3-large">
-
-        <!-- About Container -->
-        <div class="w3-container" id="about">
-            <div class="w3-content" style="max-width:700px">
-                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
-                
-                <center>  <textarea placeholder="Something About Cafe" name='aboutcafe' class='form-control'></textarea></center>
-
-
-                <div class="w3-panel w3-leftbar w3-light-grey">
-                    <p><i><textarea placeholder="Cafe's Slogan" name='slogan'class='form-control'></textarea></i></p>
-                    <p><input type="text" placeholder="Owner's Name" name='ownername' class='form-control'></p>
-                </div>
-
-                
-        <form  method="post" action="_fileupload.jsp" enctype="multipart/form-data" onsubmit="myFunction()">
-            <center>
-
-                <br><br><br>
-                <p>  Cafe's Cover photo:<input type="file" name="file" class='w3-button'><input type="submit" value="upload"> <br><br>
-                    
-                    
-</p>
-
-            </center>
-        </form>
-            </div>
-        </div>
-
-            <div class="w3-container" id="menu">
-                <div class="w3-content" style="max-width:700px">
-
-                    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
-
-                    <div class="w3-row w3-center w3-card-2 w3-padding">
-                        <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-                            <div class="w3-col s6 tablink">Items</div>
-                        </a>
-                        <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-                            <div class="w3-col s6 tablink">Items</div>
-                        </a>
-                    </div>
-
-                    <div id="Eat" class="w3-container menu w3-padding-48 w3-card-2">
-                        <center>
-                            <input type="text" name="eat1" placeholder="Food Name eg:MOMO" class="form-control">
-                            <br><br>
-                            <textarea class="w3-text-grey" name="eat1description" placeholder="Something About Food"></textarea><br>
-                            <BR><BR>
-                            <input type="text" name="eat2" placeholder="Food Name eg:Pizza" class="form-control">
-                            <br><br>
-                            <textarea class="w3-text-grey" name="eat2description" placeholder="Something About Food"></textarea><br>
-                            <BR><BR>
-                            <input type="text" name="eat3" placeholder="Food Name eg:MOMO" class="form-control">
-                            <br><br>
-                            <textarea class="w3-text-grey" name="eat3description" placeholder="Something About Food"></textarea><br>
-                            <BR><BR>
-                            <input type="text" name="eat4" placeholder="Food Name eg:MOMO" class="form-control">
-                            <br><br>
-                            <textarea class="w3-text-grey" name="eat4description" placeholder="Something About Food"></textarea><br>
-                            <BR><BR>
-                            <input type="text" name="eat5" placeholder="Food Name eg:MOMO" class="form-control">
-                            <br><br>
-                            <textarea class="w3-text-grey" name="eat5description" placeholder="Something About Food"></textarea><br>
-
-
-
-                        </center>
-                    </div>
-
-                    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card-2">
-                        <BR><BR>
-                        <input type="text" name="drink1" placeholder="Drink Name" class="form-control">
-                        <br><br>
-                        <textarea class="w3-text-grey" name="drink1description" placeholder="Something About Drink"></textarea><br>
-                        <BR><BR>
-                        <input type="text" name="drink2" placeholder="FOOD NAME/MOMO" class="form-control">
-                        <br><br>
-                        <textarea class="w3-text-grey" name="drink2description" placeholder="Something About Food"></textarea><br>
-                        <BR><BR>
-                        <input type="text" name="drink3" placeholder="FOOD NAME/MOMO" class="form-control">
-                        <br><br>
-                        <textarea class="w3-text-grey" name="drink3description" placeholder="Something About Food"></textarea><br>
-                        <BR><BR>
-                        <input type="text" name="drink4" placeholder="FOOD NAME/MOMO" class="form-control">
-                        <br><br>
-                        <textarea class="w3-text-grey" name="drink4description" placeholder="Something About Food"></textarea><br>
-                        <BR><BR>
-                        <input type="text" name="drink5" placeholder="FOOD NAME/MOMO" class="form-control">
-                        <br><br>
-                        <textarea class="w3-text-grey" name="drink5description" placeholder="Something About Foodk"></textarea><br>
-
-                    </div>  
-   <p>  Cafe's Cover photo:<input type="file" name="file" class='w3-button'><input type="submit" value="upload"> <br><br>
-                    
-                    
-</p>               </div>
-            </div>
-     
-            <!-- Contact/Area Container -->
-            <div class="w3-container" id="where" style="padding-bottom:32px;">
-                <div class="w3-content" style="max-width:700px">
-                    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-                    
-                    <div id="map"></div>
-
-            
-                    <a href="https://mynasadata.larc.nasa.gov/latitudelongitude-finder/" target="_blank">Find latitude and longitude of your location</a>
-            
-                        <br><br>        
-                  <form>
-                       
-                        <input type="text" placeholder="latitide">
-                        <br><br>
-                        <input type="text" placeholder="longitude">
-                       
                     </form>
-                        
-                        
-                    
-                    
-                    
-                    <p><span class="w3-tag">FYI!</span><textarea name='adress-description' placeholder='Adress-Description'></textarea> </p>
-                    <a href="${pageContext.servletContext.contextPath}/welcome2" target="_blank">Example of cafe template</a>
                 </div>
             </div>
-       
+        </div>
+    </div>
+</section>
 
-        <!-- Footer -->
-        <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-        </footer>
-
-
-    </body>
-
-    <script>
-        // Tabbed Menu
-            function openMenu(evt, menuName) {
-                var i, x, tablinks;
-                x = document.getElementsByClassName("menu");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablink");
-                for (i = 0; i < x.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-                }
-                document.getElementById(menuName).style.display = "block";
-                evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-            }
-            document.getElementById("myLink").click();
-            </script>
-               
-    
-    
+  <script src="${pageContext.servletContext.contextPath}/assets/tether/tether.min.js"></script>
+  <script src="${pageContext.servletContext.contextPath}/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="${pageContext.servletContext.contextPath}/assets/smooth-scroll/smooth-scroll.js"></script>
+  <script src="${pageContext.servletContext.contextPath}/assets/viewport-checker/jquery.viewportchecker.js"></script>
+  <script src="${pageContext.servletContext.contextPath}/assets/theme/js/script.js"></script>
+  <script src="${pageContext.servletContext.contextPath}/assets/formoid/formoid.min.js"></script>
+  <input name="animation" type="hidden">
+  </form>
+  <div class="col-xs-12 col-md-12">
+<center>
+  <h1>
+  <a href="${pageContext.servletContext.contextPath}/ownercontactadmin">Contact Website Admin</a>
+  </h1>
+</center>
+  </div>
+</form>
+  </body>
 </html>

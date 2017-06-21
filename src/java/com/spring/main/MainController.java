@@ -34,6 +34,10 @@ public class MainController {
     public String exampletemplatecafe(){
         return "cafetemplateexample";
     }
+    @RequestMapping("/ownercontactadmin")
+    public String contact(){
+        return "ownercontactadmin";
+    }
     }
     
     

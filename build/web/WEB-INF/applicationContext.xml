@@ -79,5 +79,10 @@
      <mvc:resources mapping="/assets/css/**" location="/assets/css/"/>
     <mvc:resources mapping="/assets/js/**" location="/assets/js/"/>
     
+    <mvc:resources mapping="/assets/csss/**" location="/assets/csss/"/>
+    <mvc:resources mapping="/assets/jss/**" location="/assets/jss/"/>
+    <mvc:resources mapping="/assets/imgs/**" location="/assets/imgs/"/>
+    <mvc:resources mapping="/assets/fontss/**" location="/assets/fontss/"/>
+    
      
 </beans>
