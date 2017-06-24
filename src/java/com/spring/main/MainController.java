@@ -7,7 +7,9 @@
 package com.spring.main;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  *
@@ -27,9 +29,14 @@ public class MainController {
         return "loginsinup";
     }
     @RequestMapping("/welcome1")
-    public String backloginsinup(){
+    public String backloginsinup(@RequestParam ("choose") String choose){
+        if(choose.equals("cafe"))
         return "cafetemplate";
+    
+    else
+            return "hoteltemplate";
     }
+    
     @RequestMapping("/welcome2")
     public String exampletemplatecafe(){
         return "cafetemplateexample";
@@ -38,6 +45,14 @@ public class MainController {
     public String contact(){
         return "ownercontactadmin";
     }
+    @RequestMapping("/welcomehotelexample")
+    public String Hotelexample(){
+       // return ("redirect:/welcome2");
+        return ("hoteltemplateexample");
+        
+    }
+    
+    
     }
     
     

@@ -65,7 +65,7 @@
      <mvc:resources mapping="/assets/dropdown/js/**" location="/assets/dropdown/js/"/>
      
      <mvc:resources mapping="/assets/formoid/**" location="/assets/formoid/"/>
-     
+    <mvc:resources mapping="/assets/images/**" location="/assets/images/"/> 
      <mvc:resources mapping="/assets/mobirise/css/**" location="/assets/mobirise/css/"/>
      
      <mvc:resources mapping="/assets/theme/css/**" location="/assets/theme/css/"/>
@@ -73,8 +73,6 @@
      <mvc:resources mapping="/assets/theme/js/**" location="/assets/theme/js/"/>
      
      <mvc:resources mapping="/assets/web/assets/jquery/**" location="/assets/web/assets/jquery/"/>
-     
-     <mvc:resources mapping="/assets/images/**" location="/assets/images/"/>
      
      <mvc:resources mapping="/assets/css/**" location="/assets/css/"/>
     <mvc:resources mapping="/assets/js/**" location="/assets/js/"/>

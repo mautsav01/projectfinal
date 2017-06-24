@@ -162,7 +162,7 @@ input[type=text]:focus {
         
         
     </div>
-        </div>
+        
    
 </section>
 
@@ -170,9 +170,55 @@ input[type=text]:focus {
 
 <section class="mbr-section mbr-section-nopadding" id="map1-4">
     <div class="mbr-map">
-        <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw" allowfullscreen="">
-            
-        </iframe></div>
+       
+        
+<div id="map" style="width:100%;height:400px;"></div>
+    <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 15
+        });
+        infoWindow = new google.maps.InfoWindow;
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABPdpKdKP7UuTPhCKGBw99mWDQJZ35OYY&callback=initMap">
+    </script>
+
 </section>
 
 <section class="mbr-footer mbr-section mbr-section-md-padding" id="contacts3-5" style="background-color: rgb(46, 46, 46); padding-top: 90px; padding-bottom: 90px;">
@@ -196,10 +242,7 @@ input[type=text]:focus {
                             <span class="list-group-icon"><span class="etl-icon icon-map-pin mbr-iconfont-company-contacts3"></span></span>
                             <span class="list-group-text">1234 Street Name, City AA 99999</span>
                         </li>
-                        <li class="list-group-item active">
-                            <span class="list-group-icon"><span class="etl-icon icon-envelope mbr-iconfont-company-contacts3"></span></span>
-                            <span class="list-group-text"><a href="mailto:support@mobirise.com">support@mobirise.com</a></span>
-                        </li>
+                        
                     </ul>
                 </div>
 

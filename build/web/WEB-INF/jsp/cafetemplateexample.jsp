@@ -37,7 +37,7 @@
                   <a href="#about">About</a>
                   <a href="#googleMap">GoogleMap</a>
                   <a href="#menu-list">Menu</a>
-                  <a href="#contact">Book a table</a>
+                  <a href="#Book">Book a table</a>
                 </div>
                 <!-- Use any element to open the sidenav -->
                 <span onclick="openNav()" class="pull-right menu-icon">?</span>
@@ -127,6 +127,12 @@
 
   <!--/ event -->
     <!-- menu -->
+    
+    
+    
+    
+    
+    
     <section id="menu-list" class="section-padding">
         <div class="container">
             <div class="row">
@@ -252,8 +258,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-xs-center">
-                    <h3 class="mbr-section-title display-2">CONTACT FORM</h3>
-                    <small class="mbr-section-subtitle">Shape your future web project with sharp design and refine coded functions.</small>
+                    <h3 class="mbr-section-title display-2">Book Now!!</h3>
+                    
                 </div>
             </div>
         </div>
@@ -270,7 +276,7 @@ We will reply you as soon as possible !!</div>
                     </div>
 
 
-                    <form action="https://mobirise.com/" method="post" data-form-title="CONTACT FORM">
+                    <form action="https://mobirise.com/" method="post" data-form-title="CONTACT FORM" id="Book">
 
                         <input type="hidden" value="M21eIreQCt1g1B6PMHehc+MIgQ+cs6e1G93/g+zmpJpGWMViZzRTProMgCVLXAL+UIwL2hzjGpxx9KDT4wPD8tzdP9VLXmlrLgDDDQvdOfs9j/R3QGedfruOvaIcwiOA" data-form-email="true">
 
@@ -283,17 +289,18 @@ We will reply you as soon as possible !!</div>
                                 </div>
                             </div>
 
+                            
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-email">Email<span class="form-asterisk">*</span></label>
-                                    <input type="email" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                    <label class="form-control-label" for="form1-0-phone">Number of People</label>
+                                    <input type="number" class="form-control" name="number" data-form-field="Phone" id="form1-0-phone">
                                 </div>
                             </div>
-
+                            
                             <div class="col-xs-12 col-md-4">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-phone">Phone</label>
-                                    <input type="tel" class="form-control" name="phone" data-form-field="Phone" id="form1-0-phone">
+                                    <label class="form-control-label" for="form1-0-phone">Time</label>
+                                    <input type="text" class="form-control" name="number" data-form-field="Phone" id="form1-0-phone" placeholder="Monday,12pm to 4pm">
                                 </div>
                             </div>
 
@@ -304,7 +311,7 @@ We will reply you as soon as possible !!</div>
                             <textarea class="form-control" name="message" rows="7" data-form-field="Message" id="form1-0-message"></textarea>
                         </div>
 
-                        <div><button type="submit" class="btn btn-primary">CONTACT US</button></div>
+                        <div><button type="submit" class="btn btn-primary">BOOK NOW</button></div>
 
                     </form>
                 </div>
@@ -317,18 +324,18 @@ We will reply you as soon as possible !!</div>
     <!-- / contact -->
     <!-- footer -->
     <footer class="footer text-center">
-        <div class="footer-top">
+        
             <div class="row">
                 <div class="col-md-offset-3 col-md-6 text-center">
                     <div class="widget">
-                        <h4 class="widget-title">Delicious</h4>
+                        <h4 class="widget-title"><br><br>Delicious</h4>
                         <address>324 Ellte Road<br>Delhi, DL 110013</address>
                         <div class="social-list">
                             <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </div>
                         <p class="copyright clear-float">
-                            © Delicious Theme. All Rights Reserved
+  
                             <div class="credits">
                                 <!-- 
                                     All the links in the footer should remain intact. 
@@ -338,11 +345,11 @@ We will reply you as soon as possible !!</div>
                                 -->
                                 Designed by <a href="https://bootstrapmade.com/">Free Bootstrap Themes</a>
                             </div>
-                        </p>
+                       
                     </div>
                 </div>
             </div>
-        </div>
+       
     </footer>
     <!-- / footer -->
     

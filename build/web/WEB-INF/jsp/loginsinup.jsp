@@ -30,23 +30,23 @@
         
     
     
-    <form action="${pageContext.servletContext.contextPath}/welcome1" method="post">
+    <form action="${pageContext.servletContext.contextPath}/welcome1" method="get">
         
-<select>
+<select name="choose">
   <option value="Hotel">Hotel</option>
   
-  <option value="Cafe/Resturant">Resturant/Cafe</option>
+  <option value="cafe">Resturant/Cafe</option>
 </select>
         <br><br>
-      <input type="text" placeholder="Hotel/Cafe-Name"/>   
-      <input type="text" placeholder="Email Address"/>
-      <input type="password" placeholder="Password"/>
+      <input type="text" placeholder="Hotel/Cafe-Name" name="hotelname">   
+      <input type="text" placeholder="Email Address" name="email">
+      <input type="password" placeholder="Password" name="password">
       <button>Login</button>
     </form>
   </div>
   <div class="form">
     <h2>Create an account for</h2>
-    <form>
+    <form >
         
 <select>
   <option value="Hotel">Hotel</option>

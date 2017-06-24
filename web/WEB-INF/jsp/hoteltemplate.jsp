@@ -30,7 +30,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-xs-center">
-                    <h3 class="mbr-section-title display-2">Cafe Form</h3>
+                    <h3 class="mbr-section-title display-2">Hotel Form</h3>
                     <small class="mbr-section-subtitle">Shape your future web project with sharp design and refine coded functions.</small>
                 </div>
             </div>
@@ -60,20 +60,20 @@ We will reply you as soon as possible !!</div>
                             
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Cafe Name<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Hotel Name<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 							<div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Cafe Quotes<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Hotel Quotes<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 							
 							<div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Cafe Address<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Hotel Address<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
@@ -84,19 +84,19 @@ We will reply you as soon as possible !!</div>
  
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                Cafe-Cover pic:     <input type="file" class="form-control" name="email"  data-form-field="Email" id="form1-0-email">
+                                hotel-Cover pic:     <input type="file" class="form-control" name="email"  data-form-field="Email" id="form1-0-email">
                                 </div>
                             </div>
 							
 								<div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Cafe Description<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Hotel Description<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 								<div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Cafe features<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Hotel features<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
@@ -128,12 +128,12 @@ We will reply you as soon as possible !!</div>
 							
 						 <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Food-Pic:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                Hotel's-Garden/Parking:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
                                 </div>
                             </div>
 							<br/><br/>
 			<div class=	"col-xs-12 col-md-12">
-			<a href="https://mynasadata.larc.nasa.gov/latitudelongitude-finder/" target="_blank">Click here for Location of Your Cafe</a>
+			<a href="https://mynasadata.larc.nasa.gov/latitudelongitude-finder/" target="_blank">Click here for Location of Your hotel</a>
 			
 			</div>				
 					<div class="col-xs-12 col-md-6">
@@ -151,12 +151,12 @@ We will reply you as soon as possible !!</div>
 
 		<div class="col-xs-12 col-md-12">
                                 
-                                    <label class="form-control-label" for="form1-0-name"><h1>Food Item</h1></label>
+                                    <label class="form-control-label" for="form1-0-name"><h1>Room type</h1></label>
                                 
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Room Type<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
@@ -166,10 +166,16 @@ We will reply you as soon as possible !!</div>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
+                                 <div class="form-group">
+                                Room's Picture:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                </div>
+                            </div>
+                                                        
+			
 							
 								<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Room Name<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
@@ -179,9 +185,15 @@ We will reply you as soon as possible !!</div>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
-	<div class="col-xs-12 col-md-6">
+                                                           <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                Room's Picture:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                </div>
+                            </div>
+                        
+                        	<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Room Name<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
@@ -191,9 +203,16 @@ We will reply you as soon as possible !!</div>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
-	<div class="col-xs-12 col-md-6">
+                                                           <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
+                                Room's Picture:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                </div>
+                            </div>
+                        
+                        
+                        	<div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-name">Room Name<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
@@ -203,84 +222,18 @@ We will reply you as soon as possible !!</div>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
-	<div class="col-xs-12 col-md-6">
+                                                           <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                Room's Picture:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
                                 </div>
                             </div>
-						<div class="col-xs-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
-                                </div>
-                            </div>
-
-								<div class="col-xs-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
-                                </div>
-                            </div>
-						<div class="col-xs-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
-                                </div>
-                            </div>
-	<div class="col-xs-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
-                                </div>
-                            </div>
-						<div class="col-xs-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
-                                </div>
-                            </div>
-	<div class="col-xs-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
-                                </div>
-                            </div>
-						<div class="col-xs-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
-                                </div>
-                            </div>
-	<div class="col-xs-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
-                                </div>
-                            </div>
-						<div class="col-xs-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
-                                </div>
-                            </div>
-	<div class="col-xs-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
-                                </div>
-                            </div>
-						<div class="col-xs-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
-                                </div>
-                            </div>
-
+                        
+                        
+        
 <center> 							
 <div class="col-xs-12 col-md-12">
     
-  <a href="${pageContext.servletContext.contextPath}/welcome2" target="_blank">Click Here For Example</a>
+  <a href="${pageContext.servletContext.contextPath}/welcomehotelexample" target="_blank">Click Here For Example</a>
    
       
   </div>
@@ -304,7 +257,7 @@ We will reply you as soon as possible !!</div>
   <script src="${pageContext.servletContext.contextPath}/assets/theme/js/script.js"></script>
   <script src="${pageContext.servletContext.contextPath}/assets/formoid/formoid.min.js"></script>
   <input name="animation" type="hidden">
-  </form>
+
   <div class="col-xs-12 col-md-12">
 <center>
   <h1>

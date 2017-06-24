@@ -54,6 +54,10 @@ We will reply you as soon as possible !!</div>
 
                         <div class="row row-sm-offset">
 
+                            
+                            
+                            
+                            
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Cafe Name<span class="form-asterisk">*</span></label>
@@ -96,26 +100,26 @@ We will reply you as soon as possible !!</div>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
-<div class="col-xs-12 col-md-4">
+<div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 							
-<div class="col-xs-12 col-md-4">
+<div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
-<div class="col-xs-12 col-md-4">
+<div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
-<div class="col-xs-12 col-md-4">
+<div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
@@ -129,16 +133,16 @@ We will reply you as soon as possible !!</div>
                             </div>
 							<br/><br/>
 			<div class=	"col-xs-12 col-md-12">
-			<a href="#" target="_blank">Click here for Location of Your Cafe</a>
+			<a href="https://mynasadata.larc.nasa.gov/latitudelongitude-finder/" target="_blank">Click here for Location of Your Cafe</a>
 			
 			</div>				
-					<div class="col-xs-12 col-md-4">
+					<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Latitude<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
-		<div class="col-xs-12 col-md-4">
+		<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Longitude<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">

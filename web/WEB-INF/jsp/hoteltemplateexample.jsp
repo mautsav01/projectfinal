@@ -36,7 +36,7 @@
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                   <a href="#about">About</a>
                   <a href="#googleMap">GoogleMap</a>
-                  <a href="#menu-list">Menu</a>
+                  
                   <a href="#Book">Book a table</a>
                 </div>
                 <!-- Use any element to open the sidenav -->
@@ -46,9 +46,9 @@
         <div class="container">
         <div class="row">
           <div class="inner text-center">
-            <h1 class="logo-name">Cafe Name</h1>
-            <h2>Cafe Quotes</h2>
-            <p>Cafe Address</p>
+            <h1 class="logo-name">Hotel Name</h1>
+            <h2>Hotel Quotes</h2>
+            <p>Hotel Address</p>
           </div>
         </div>
         </div>
@@ -60,14 +60,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center marb-35">
-                    <h1 class="header-h">Cafe Name</h1>
-                    <p class="header-p">Cafe Description            </div>
+                    <h1 class="header-h">Hotel Name</h1>
+                    <p class="header-p">Hotel Description            </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <div class="col-md-6 col-sm-6">
                         <div class="about-info">
-                            <h2 class="heading">Cafe Name</h2>
-                            <p>cafe Features</p>
+                            <h2 class="heading">Hotel Name</h2>
+                            <p>Hotel Features</p>
                             <div class="details-list">
                                 <ul>
                                     <li><i class="fa fa-check"></i>Feature1</li>
@@ -127,133 +127,73 @@
 
   <!--/ event -->
     <!-- menu -->
+ 
+<section class="mbr-cards mbr-section mbr-section-nopadding" id="features3-3" style="background-color: rgb(255, 255, 255);">
+
     
-    
-    
-    
-    
-    
-    <section id="menu-list" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center marb-35">
-                    <h1 class="header-h">Menu List</h1>
-                    <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                    <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
-                </div>
-                <div class="col-md-12  text-center gallery-trigger">
-                    <ul>
-                        <li><a class="filter" data-filter="all">Show All</a></li>
-                        <li><a class="filter" data-filter=".category-1">Breakfast</a></li>
-                        <li><a class="filter" data-filter=".category-2">Lunch</a></li>
-                        <li><a class="filter" data-filter=".category-3">Dinner</a></li>
-                    </ul>
-                </div>
-                <div id="Container">
-                    <div class="mix category-1 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/imgs/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$20.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-1 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/imgs/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$20.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-1 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/imgs/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$20.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-1 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/imgs/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$20.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-2 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/imgs/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$20.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-2 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/imgs/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$20.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-2 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/imgs/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$20.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-2 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/imgs/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$20.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-3 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/imgs/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$20.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-3 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/imgs/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$20.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-3 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/imgs/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$20.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-                    </div>
-                    <div class="mix category-3 menu-restaurant" data-myorder="2">
-                        <span class="clearfix">
-                        <a class="menu-title" href="#" data-meal-img="assets/imgs/restaurant/rib.jpg">Food Item Name</a>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$20.99</span>
-                      </span>
-                      <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+
+    <div class="mbr-cards-row row">
+        <div class="mbr-cards-col col-xs-12 col-lg-3 col-md-3" style="padding-top: 80px; padding-bottom: 80px;">
+            <div class="container">
+              <div class="card cart-block col-md-3">
+                  <div class="card-img"><img src="assets/images/table.jpg" class="card-img-top"></div>
+                  <div class="card-block">
+                    <h4 class="card-title"> Room-1 Type</h4>
+                    <h5 class="card-subtitle">Room features</h5>
+                    <p class="card-text">Room Description</p>
+                    <div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--/ menu -->
-    <!-- contact -->
-    <section class="mbr-section" id="form1-0" style="background-color: rgb(255, 255, 255); padding-top: 120px; padding-bottom: 120px;">
+        <div class="mbr-cards-col col-xs-12 col-lg-3 col-md-3" style="padding-top: 80px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block col-md-3">
+                    <div class="card-img"><img src="assets/images/desktop.jpg" class="card-img-top"></div>
+                    <div class="card-block">
+                        <h4 class="card-title">Room-2</h4>
+                        <h5 class="card-subtitle">Room Features</h5>
+                        <p class="card-text">Room Description</p>
+                        <div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3 col-md-3" style="padding-top: 80px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block col-md-3">
+                    <div class="card-img"><img src="assets/images/coworkers.jpg" class="card-img-top"></div>
+                    <div class="card-block">
+                        <h4 class="card-title">Room -3</h4>
+                        <h5 class="card-subtitle">Room Features</h5>
+                        <p class="card-text">Room Descriptions</p>
+                        <div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3 col-md-3" style="padding-top: 80px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block col-md-3">
+                    <div class="card-img"><img src="assets/images/code-man.jpg" class="card-img-top"></div>
+                    <div class="card-block">
+                        <h4 class="card-title">Room -4</h4>
+                        <h5 class="card-subtitle">Room Features</h5>
+                        <p class="card-text">Room Description</p>
+                        <div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</section>
     
+    
+    
+    
+
     <div class="mbr-section mbr-section__container mbr-section__container--middle">
         <div class="container">
             <div class="row">
@@ -280,38 +220,49 @@ We will reply you as soon as possible !!</div>
 
                         <input type="hidden" value="M21eIreQCt1g1B6PMHehc+MIgQ+cs6e1G93/g+zmpJpGWMViZzRTProMgCVLXAL+UIwL2hzjGpxx9KDT4wPD8tzdP9VLXmlrLgDDDQvdOfs9j/R3QGedfruOvaIcwiOA" data-form-email="true">
 
+                      
                         <div class="row row-sm-offset">
 
-                            <div class="col-xs-12 col-md-4">
+                            <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Name<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Email<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 
                             
-                            <div class="col-xs-12 col-md-4">
+                            
+                            <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-phone">Number of People</label>
                                     <input type="number" class="form-control" name="number" data-form-field="Phone" id="form1-0-phone">
                                 </div>
                             </div>
                             
-                            <div class="col-xs-12 col-md-4">
+                            <div class="col-xs-12 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-0-phone">Number of Rooms</label>
+                                    <input type="number" class="form-control" name="number" data-form-field="Phone" id="form1-0-phone">
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-phone">Time</label>
-                                    <input type="text" class="form-control" name="number" data-form-field="Phone" id="form1-0-phone" placeholder="Monday,12pm to 4pm">
+                                    <input type="text" class="form-control" name="number" data-form-field="Phone" id="form1-0-phone" placeholder="21st June-To-21st July">
                                 </div>
                             </div>
 
                         </div>
-
+  <div class="col-xs-12 col-md-12">
                         <div class="form-group">
                             <label class="form-control-label" for="form1-0-message">Message</label>
-                            <textarea class="form-control" name="message" rows="7" data-form-field="Message" id="form1-0-message"></textarea>
+                            <textarea class="form-control" name="message" rows="6" data-form-field="Message" id="form1-0-message" placeholder="You can  include your detail about Hotel staying and Requirment"></textarea>
                         </div>
-
-                        <div><button type="submit" class="btn btn-primary">BOOK NOW</button></div>
+  </div>
+                        <div><button type="submit" class="btn btn-primary col-xs-12 col-md-12">BOOK NOW</button></div>
 
                     </form>
                 </div>
