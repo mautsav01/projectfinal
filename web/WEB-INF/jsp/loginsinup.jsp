@@ -38,31 +38,50 @@
   <option value="cafe">Resturant/Cafe</option>
 </select>
         <br><br>
-      <input type="text" placeholder="Hotel/Cafe-Name" name="hotelname">   
-      <input type="text" placeholder="Email Address" name="email">
-      <input type="password" placeholder="Password" name="password">
+        <input type="text" placeholder="Hotel/Cafe-Name" name="company" required="">   
+        <input type="text" placeholder="Email Address" name="email" required="">
+        <input type="password" placeholder="Password" name="password1" required="">
       <button>Login</button>
     </form>
   </div>
   <div class="form">
     <h2>Create an account for</h2>
-    <form >
+    <form name="myForm" action="${pageContext.servletContext.contextPath}/sinup" method="get" onsubmit="return validateForm()">
         
-<select>
+<select name="choose">
   <option value="Hotel">Hotel</option>
   
-  <option value="Cafe/Resturant">Resturant/Cafe</option>
+  <option value="cafe">Resturant/Cafe</option>
 </select>
         <br><br>
-      <input type="text" placeholder="Username"/>
-      <input type="password" placeholder="Password"/>
-       <input type="password" placeholder="Confirm-Password"/>
-      <input type="email" placeholder="Email Address"/>
-      <input type="tel" placeholder="Phone Number"/>
+        <input type="text" placeholder="Hotel/Cafe-Name" name="company" />
+        <input type="text" placeholder="Username" name="username" />
+        <input type="email" placeholder="Email Address" name="email" />
+        <input type="password" placeholder="Password" name="password1" />
+        <input type="password" placeholder="Confirm-Password" name="password2" />
+        <input type="tel" placeholder="Phone Number" name="phone" />
       <button>Register</button>
     </form>
+    <script>
+        function validateForm() {
+    var x = document.forms["myForm"]["password"].value;
+    var y = document.forms["myForm"]["password1"].value;
+    
+    if (x != y) {
+        alert("Password Not Match!!");
+        return false;
+    
+    }
+    
+}
+
+        
+        
+    </script>
+    
+    
   </div>
-  <div class="cta"><a href="http://andytran.me">Forgot your password?</a></div>
+  <div class="cta"><a href="#">Forgot your password?</a></div>
 </div>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
