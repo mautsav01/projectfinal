@@ -17,12 +17,12 @@ import javax.swing.JOptionPane;
  */
 public class Connect {
    public Connection cn;
-    public void COnnect(){
+    public Connect(){
         try {
             Class.forName("com.mysql.jdbc.Driver");
             cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/final2","root","");
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(null, "Exceptionmmmmm.."+ex);
+            JOptionPane.showMessageDialog(null, "Exception"+ex);
         }
     }
     

@@ -6,7 +6,7 @@
 package com.spring.main;
 
 import com.spring.entity.Sinup;
-import com.spring.statement.statement;
+import com.spring.statement.Statementsinup;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -46,25 +46,25 @@ public class MainController {
             return "hoteltemplate";
         }
     }
+ ///////////////////////////////////////////////////////////////////////////////////   
     @RequestMapping("/sinup")
-    public String sinup(@RequestParam("choose") String choose,@ModelAttribute("sinup") Sinup sinup,Model model){
+    public String sinup(@RequestParam("choose") String choose,@ModelAttribute("sinup") Sinup sinup,Model model) throws Exception{
         
-            new statement().sinup1(sinup);
-            model.addAttribute("sinup",sinup);
-    
-            
-  if (choose.equals("cafe")) {
-      
-      //return "exaple";
-            return "cafetemplate";
-               
+        Statementsinup sn=new Statementsinup();
+        boolean check=sn.sinup1(sinup);
+           if(check==true){
+            //model.addAttribute("sinup",sinup);
+              if (choose.equals("cafe")) {
+            return "cafetemplate";       
         } else {
             return "hoteltemplate";
-        }
-        //return null;
+        }}else{
+               JOptionPane.showMessageDialog(null, "Duplicate Company Name..Assign New One!!");
+               return "redirect:/welcome0";
+           }
     }
             
-
+////////////////////////////////////////////////////////////////////////////////
     @RequestMapping("/welcome2")
     public String exampletemplatecafe() {
         return "cafetemplateexample";

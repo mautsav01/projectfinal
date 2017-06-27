@@ -12,17 +12,16 @@ import java.sql.*;
 import javax.swing.JOptionPane;
 
 
-public class statement {
+public class Statementsinup {
     
     
 public PreparedStatement pst;
-    public void sinup1(Sinup sinup)  {
+    public boolean sinup1(Sinup sinup)  {
     try {
         Connect con=new Connect();
-        con.COnnect();
         
         
-        pst=con.cn.prepareStatement("insert into sinup(company,username,email,password1,password2,phone)  values (?,?,?,?,?,?");
+        pst=con.cn.prepareStatement("insert into sinup(company,username,email,password1,password2,phone)  values (?,?,?,?,?,?)");
         
         pst.setString(1, sinup.getCompany().toString());
         
@@ -33,21 +32,26 @@ public PreparedStatement pst;
         
         pst.setString(6, sinup.getPhone().toString());
         
-            JOptionPane.showMessageDialog(null, "Tes"+sinup.getPhone().toString());
+           // JOptionPane.showMessageDialog(null, "Tes"+sinup.getPhone().toString());
    //     System.out.println(""+sinup.getPhone().toString());
         int result4=pst.executeUpdate();
         if(result4>0){
-            JOptionPane.showMessageDialog(null, "Successs:");
-        }else{
-            
+            return true;
+             }
+        else{
+            return false;
         }
-        con.cn.close();
         
         
         
-    } catch (SQLException ex) {
-           JOptionPane.showMessageDialog(null, "Excep"+ex);
+        
+    } catch (Exception ex) {
+         ex.printStackTrace();
+         
+    return false;
+        
     }
-        }
-    }
+    
+        }}
+    
 

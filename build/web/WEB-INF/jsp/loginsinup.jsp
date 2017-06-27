@@ -46,7 +46,7 @@
   </div>
   <div class="form">
     <h2>Create an account for</h2>
-    <form name="myForm" action="${pageContext.servletContext.contextPath}/sinup" method="get" onsubmit="return validateForm()">
+    <form name="sinup" action="${pageContext.servletContext.contextPath}/sinup" method="get" onsubmit="return validateForm()">
         
 <select name="choose">
   <option value="Hotel">Hotel</option>
@@ -64,8 +64,8 @@
     </form>
     <script>
         function validateForm() {
-    var x = document.forms["myForm"]["password"].value;
-    var y = document.forms["myForm"]["password1"].value;
+    var x = document.forms["sinup"]["password"].value;
+    var y = document.forms["sinup"]["password1"].value;
     
     if (x != y) {
         alert("Password Not Match!!");
