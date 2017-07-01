@@ -6,10 +6,9 @@
 package com.spring.main;
 
 import com.spring.entity.Sinup;
+import com.spring.statement.Statementlogin;
 import com.spring.statement.Statementsinup;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -38,14 +37,21 @@ public class MainController {
     
 
     @RequestMapping("/welcome1")
-    public String login(@RequestParam("choose") String choose,Model model) {
+    public String login(@RequestParam("choose") String choose,@ModelAttribute("sinup") Sinup sinup,Model model) throws SQLException {
+        Statementlogin lg=new Statementlogin();
+        boolean check=lg.login1(sinup);
         
-        if (choose.equals("cafe")) {
+        if(check==true){
+                if (choose.equals("cafe")) {
             return "cafetemplate";
         } else {
             return "hoteltemplate";
         }
-    }
+    }else{
+              JOptionPane.showMessageDialog(null, "Email OR Password OR Company Doesnot match!!");
+             
+              return "redirect:/welcome0";
+}}
  ///////////////////////////////////////////////////////////////////////////////////   
     @RequestMapping("/sinup")
     public String sinup(@RequestParam("choose") String choose,@ModelAttribute("sinup") Sinup sinup,Model model) throws Exception{
