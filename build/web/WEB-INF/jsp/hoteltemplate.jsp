@@ -1,3 +1,4 @@
+<%@page import="com.spring.connect.Connect"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +24,12 @@
   
 </head>
 <body>
+    <%
+   String hotelname=request.getParameter("company");
+    
+    
+    
+    %>
 
 <section class="mbr-section" id="form1-0" style="background-color: rgb(255, 255, 255); padding-top: 120px; padding-bottom: 120px;">
     
@@ -61,7 +68,7 @@ We will reply you as soon as possible !!</div>
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Hotel Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" value="<%=hotelname%>" name="hotelname" readonly="" data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 							<div class="col-xs-12 col-md-3">

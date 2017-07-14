@@ -226,10 +226,10 @@ input[type=text]:focus {
 
     <div class="row">
     
-            <div class="mbr-company col-xs-12 col-md-3 col-lg-3">
+            <div class="mbr-company col-xs-12 col-md-6 col-lg-3">
 
                 <div class="mbr-company card">
-                    <div><img src="assets/images/logo.png" class="card-img-top" align="top"></div>
+                    <div><img src="assets/images/logo.png" class="card-img-top"></div>
                     <div class="card-block">
                         <p class="card-text">Footer with solid color background and a contact form, Easily add subscribe and contact forms without any server-side integration.</p>
                     </div>
@@ -242,32 +242,30 @@ input[type=text]:focus {
                             <span class="list-group-icon"><span class="etl-icon icon-map-pin mbr-iconfont-company-contacts3"></span></span>
                             <span class="list-group-text">1234 Street Name, City AA 99999</span>
                         </li>
-                        
+                        <li class="list-group-item active">
+                            <span class="list-group-icon"><span class="etl-icon icon-envelope mbr-iconfont-company-contacts3"></span></span>
+                            <span class="list-group-text"><a href="mailto:support@mobirise.com">support@mobirise.com</a></span>
+                        </li>
                     </ul>
                 </div>
 
             </div>
-        <div class="mbr-company col-xs-12 col-md-9 col-lg-3">
-            <div class="mbr-footer-content col-xs-12 col-lg-3 col-md-3">
+            <div class="mbr-footer-content col-xs-12 col-md-6 col-lg-3">
                 <h4>Categories</h4>
-                <ul><li><a class="text-white" href="#">Business</a></li><li>
-                        <a class="text-white" href="#">Design</a></li><li>
-                        <a class="text-white" href="#">Real life</a></li><li>
-                        <a class="text-white" href="#">Science</a></li><li>
-                        <a class="text-white" href="#">Tech</a></li></ul>
+                <ul><li><a class="text-white" href="#">Business</a></li><li><a class="text-white" href="#">Design</a></li><li><a class="text-white" href="#">Real life</a></li><li><a class="text-white" href="#">Science</a></li><li><a class="text-white" href="#">Tech</a></li></ul>
             </div>
-            <div class="mbr-footer-content col-xs-12 col-md-4 col-lg-3">
-                <strong>Contacts</strong><br>Email: meroid13@gmail.com<br>Phone: +1 (0) 000 0000 001<br>Fax: +1 (0) 000 0000 002<br><br><br><strong>Address</strong><br>1234 Street Name<br>City, AA 99999
-            </div> 
-            
-            <div class="col-xs-12 col-md-4 col-lg-2" data-form-type="formoid">
+            <div class="mbr-footer-content col-xs-12 col-md-6 col-lg-3">
+                <p><strong>Contacts</strong><br>Email: support@mobirise.com<br>Phone: +1 (0) 000 0000 001<br>Fax: +1 (0) 000 0000 002<br><br><br><strong>Address</strong><br>1234 Street Name<br>City, AA 99999</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3" data-form-type="formoid">
+
                 <div data-form-alert="true">
-                    <div hidden="" data-form-alert-success="true">Thanks for contacting us!.We will reply as soon as possible!</div>
+                    <div hidden="" data-form-alert-success="true">Thanks for filling out form!</div>
                 </div>
 
-                <form action="#/" method="post" data-form-title="MESSAGE">
+                <form action="https://mobirise.com/" method="post" data-form-title="MESSAGE">
 
-                    <input type="hidden" value="CD4+HF+qiAvMBTVf1GIfm4BhFVbDBE/JYEb4iBwrsslrg3AmpGGoXI6PTkCpDttU92/PKch5tLE7UzGyM2Vc+1PqTwnP5WJo8c56kp168KKUlYAB23Zj3YyPy+twPtjC" data-form-email="true">
+                    <input type="hidden" value="oZucPHfK4SiAeiqJhuuBFFNznWhb/PpVoRiMrV7sdTUoc6bZ9wssyVxpeObQyF9u96ttAsTMYaMzINAsaJeGC/CPjaJU0pPWqIXznvRgzqhoqFF7RgjFByYyFoakqvzG" data-form-email="true">
 
                     
 
@@ -288,9 +286,10 @@ input[type=text]:focus {
                 </form>
 
             </div>
-                </div>
         </div>
 </section>
+
+
 
 
   <script src="${pageContext.servletContext.contextPath}/assets/web/assets/jquery/jquery.min.js"></script>

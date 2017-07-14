@@ -61,9 +61,9 @@ public class MainController {
            if(check==true){
             //model.addAttribute("sinup",sinup);
               if (choose.equals("cafe")) {
-            return "cafetemplate";       
+            return "cafesinup";       
         } else {
-            return "hoteltemplate";
+            return "hotelsinup";
         }}else{
                JOptionPane.showMessageDialog(null, "Duplicate Company Name..Assign New One!!");
                return "redirect:/welcome0";
