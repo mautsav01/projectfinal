@@ -55,7 +55,7 @@ We will reply you as soon as possible !!</div>
                     </div>
 
 
-                    <form action="#cafebackend" method="post" data-form-title="CONTACT FORM">
+                    <form action="${pageContext.servletContext.contextPath}/Hotelsinup" method="post" data-form-title="CONTACT FORM" enctype="multipart/form-data">
 
                         <input type="hidden" value="FNKfkEMenDBzal6ftLSw6EMzWSAABVJTYj5lpXThyD+oGPtogHkZcmTN/x+0cH6Si7Adur3FBIeWcB88qrIoQOJcEb0SqEwd6udnvqgOU/NaddfxJ8KrVTq4mBRZ1KZP" data-form-email="true">
 
@@ -74,14 +74,14 @@ We will reply you as soon as possible !!</div>
 							<div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Hotel Quotes<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="quotes"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 							
 							<div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Hotel Address<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="address"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 
@@ -91,51 +91,51 @@ We will reply you as soon as possible !!</div>
  
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                hotel-Cover pic:     <input type="file" class="form-control" name="email"  data-form-field="Email" id="form1-0-email">
+                                hotel-Cover pic:     <input type="file" class="form-control" name="file"  data-form-field="Email" id="form1-0-email">
                                 </div>
                             </div>
 							
 								<div class="col-xs-12 col-md-12">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Hotel Description<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="description"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 								<div class="col-xs-12 col-md-12">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Hotel features<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="features"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="features1"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 							
 <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <label class="form-control-label" for="form1-0-name">Feature2<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="features2"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <label class="form-control-label" for="form1-0-name">Feature3<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="features3"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <label class="form-control-label" for="form1-0-name">Feature4<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="features4"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 							
 						 <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Hotel's-Garden/Parking:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                Hotel's-Garden/Parking:     <input type="file" class="form-control" name="file1"  data-form-field="Email" id="form1-0-email">
                                 </div>
                             </div>
 							<br/><br/>
@@ -146,13 +146,13 @@ We will reply you as soon as possible !!</div>
 					<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Latitude<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="latitude"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 		<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Longitude<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="longitude"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 
@@ -164,17 +164,17 @@ We will reply you as soon as possible !!</div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Room Type<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="roomtype1"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="price1"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
                                  <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                Room's Picture:     <input type="file" class="form-control" name="file2"  data-form-field="Email" id="form1-0-email">
                                 </div>
                             </div>
                                                         
@@ -183,36 +183,36 @@ We will reply you as soon as possible !!</div>
 								<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Room Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="type2"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="price2"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
                                                            <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                Room's Picture:     <input type="file" class="form-control" name="file3"  data-form-field="Email" id="form1-0-email">
                                 </div>
                             </div>
                         
                         	<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Room Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="type3"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="price3"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
                                                            <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                Room's Picture:     <input type="file" class="form-control" name="file4"  data-form-field="Email" id="form1-0-email">
                                 </div>
                             </div>
                         
@@ -220,18 +220,18 @@ We will reply you as soon as possible !!</div>
                         	<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Room Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="type4"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="price4"  data-form-field="Name" id="form1-0-name">
                                 </div>
                             </div>
                                                            <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                Room's Picture:     <input type="file" class="form-control" name="file5"  data-form-field="Email" id="form1-0-email">
                                 </div>
                             </div>
                         
@@ -272,6 +272,6 @@ We will reply you as soon as possible !!</div>
   </h1>
 </center>
   </div>
-</form>
+
   </body>
 </html>

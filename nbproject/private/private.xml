@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/final2/src/java/com/spring/entity/Hotelinfo.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/final2/src/java/com/spring/main/MainController.java</file>
-            <file>file:/C:/Users/USER/Documents/NetBeansProjects/final2/web/WEB-INF/jsp/loginsinup.jsp</file>
-            <file>file:/C:/Users/USER/Documents/NetBeansProjects/final2/web/WEB-INF/jsp/cafesinup.jsp</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/final2/src/java/com/spring/statement/Statementlogin.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/final2/web/WEB-INF/jsp/hotelsinup.jsp</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/final2/src/java/com/spring/statement/Hotelsinup.java</file>
         </group>
     </open-files>
 </project-private>

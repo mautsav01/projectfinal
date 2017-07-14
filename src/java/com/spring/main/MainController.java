@@ -5,7 +5,10 @@
  */
 package com.spring.main;
 
+import com.spring.entity.Hotelinfo;
 import com.spring.entity.Sinup;
+import com.spring.statement.Hotelsinup;
+
 import com.spring.statement.Statementlogin;
 import com.spring.statement.Statementsinup;
 import java.sql.SQLException;
@@ -32,6 +35,7 @@ public class MainController {
     @RequestMapping("/welcome0")
     public String loginsinup(Model model) {
                model.addAttribute("sinup", new Sinup());
+               
         return "loginsinup";
     }
     
@@ -55,15 +59,17 @@ public class MainController {
  ///////////////////////////////////////////////////////////////////////////////////   
     @RequestMapping("/sinup")
     public String sinup(@RequestParam("choose") String choose,@ModelAttribute("sinup") Sinup sinup,Model model) throws Exception{
-        
+        model.addAttribute("info",new Hotelinfo());
         Statementsinup sn=new Statementsinup();
         boolean check=sn.sinup1(sinup);
            if(check==true){
             //model.addAttribute("sinup",sinup);
               if (choose.equals("cafe")) {
-            return "cafesinup";       
+            return "cafesinup";  
+            
         } else {
             return "hotelsinup";
+         
         }}else{
                JOptionPane.showMessageDialog(null, "Duplicate Company Name..Assign New One!!");
                return "redirect:/welcome0";
@@ -87,5 +93,15 @@ public class MainController {
         return ("hoteltemplateexample");
 
     }
+    @RequestMapping("/Hotelsinup")
+    public String Hotel(@ModelAttribute("info") Hotelinfo info, Model model){
+      
+        Hotelsinup sn1=new Hotelsinup();
+        boolean check=sn1.sinuphotel(info);
+        return "redirect:/";
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////
+   
 
 }

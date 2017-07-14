@@ -30,7 +30,7 @@
         
     
     
-    <form action="${pageContext.servletContext.contextPath}/welcome1" method="get">
+    <form action="${pageContext.servletContext.contextPath}/hotel_sinup_back" method="get">
         
 <select name="choose">
   <option value="Hotel">Hotel</option>
