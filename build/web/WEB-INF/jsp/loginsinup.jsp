@@ -4,12 +4,10 @@
   <meta charset="UTF-8">
   <title>Flat Login Form 3.0</title>
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-
+ 
       <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/assets/css/style.css">
+      <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/assets/js/test1.css">
+      <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/assets/js/test2.css">
 
   
 </head>
@@ -30,7 +28,7 @@
         
     
     
-    <form action="${pageContext.servletContext.contextPath}/hotel_sinup_back" method="get">
+    <form action="${pageContext.servletContext.contextPath}/welcome1" method="get">
         
 <select name="choose">
   <option value="Hotel">Hotel</option>
@@ -83,7 +81,8 @@
   </div>
   <div class="cta"><a href="#">Forgot your password?</a></div>
 </div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+ 
+    <script src="${pageContext.servletContext.contextPath}/assets/js/test.js"></script>
 
     <script src="${pageContext.servletContext.contextPath}/assets/js/index.js"></script>
     

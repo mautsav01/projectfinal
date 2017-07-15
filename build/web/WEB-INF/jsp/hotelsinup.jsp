@@ -55,9 +55,7 @@ We will reply you as soon as possible !!</div>
                     </div>
 
 
-                    <form action="${pageContext.servletContext.contextPath}/Hotelsinup" method="post" data-form-title="CONTACT FORM" enctype="multipart/form-data">
-
-                        <input type="hidden" value="FNKfkEMenDBzal6ftLSw6EMzWSAABVJTYj5lpXThyD+oGPtogHkZcmTN/x+0cH6Si7Adur3FBIeWcB88qrIoQOJcEb0SqEwd6udnvqgOU/NaddfxJ8KrVTq4mBRZ1KZP" data-form-email="true">
+                    <form action="${pageContext.servletContext.contextPath}/Hotelsinup" method="post" enctype="multipart/form-data">
 
                         <div class="row row-sm-offset">
 

@@ -321,7 +321,7 @@ public class Hotelinfo implements Serializable {
 
     @Override
     public String toString() {
-        return "com.spring.connect.Hotelinfo[ id=" + id + " ]";
+        return "com.spring.entity.Hotelinfo[ id=" + id + " ]";
     }
     
 }

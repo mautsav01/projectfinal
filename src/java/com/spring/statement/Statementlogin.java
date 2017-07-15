@@ -11,6 +11,7 @@ import com.spring.entity.Sinup;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -20,6 +21,7 @@ public class Statementlogin {
 
     public boolean login1(Sinup sinup) throws SQLException {
         String company=sinup.getCompany().toString();
+        JOptionPane.showMessageDialog(null, company);
         String email=sinup.getEmail().toString();
         String password=sinup.getPassword1().toString();
         

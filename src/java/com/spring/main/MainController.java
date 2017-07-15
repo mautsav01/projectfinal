@@ -17,6 +17,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
@@ -29,13 +31,14 @@ public class MainController {
     //StudentDao sdao=new StudentDao();
     @RequestMapping("/")
     public String index() {
+        
         return "index";
     }
 
     @RequestMapping("/welcome0")
     public String loginsinup(Model model) {
-               model.addAttribute("sinup", new Sinup());
-               
+         model.addAttribute("sinup", new Sinup());      
+              model.addAttribute("info",new Hotelinfo());
         return "loginsinup";
     }
     
@@ -59,9 +62,10 @@ public class MainController {
  ///////////////////////////////////////////////////////////////////////////////////   
     @RequestMapping("/sinup")
     public String sinup(@RequestParam("choose") String choose,@ModelAttribute("sinup") Sinup sinup,Model model) throws Exception{
-        model.addAttribute("info",new Hotelinfo());
+      
         Statementsinup sn=new Statementsinup();
         boolean check=sn.sinup1(sinup);
+         model.addAttribute("info",new Hotelinfo());
            if(check==true){
             //model.addAttribute("sinup",sinup);
               if (choose.equals("cafe")) {
@@ -93,12 +97,13 @@ public class MainController {
         return ("hoteltemplateexample");
 
     }
-    @RequestMapping("/Hotelsinup")
+    @RequestMapping(value="/Hotelsinup",consumes = {"Multipart/form-data"})
     public String Hotel(@ModelAttribute("info") Hotelinfo info, Model model){
-      
+       model.addAttribute("info",info);
+       JOptionPane.showMessageDialog(null, info.getFeatures1());
         Hotelsinup sn1=new Hotelsinup();
         boolean check=sn1.sinuphotel(info);
-        return "redirect:/";
+        return "hotelsinup";
     }
     
     ////////////////////////////////////////////////////////////////////////////

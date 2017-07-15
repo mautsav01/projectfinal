@@ -8,7 +8,7 @@ package com.spring.statement;
 
 import com.spring.entity.Hotelinfo;
 import javax.swing.JOptionPane;
-import org.springframework.ui.Model;
+
 
 /**
  *
@@ -17,7 +17,7 @@ import org.springframework.ui.Model;
 public class Hotelsinup {
 
     public boolean sinuphotel(Hotelinfo info) {
-      String name=info.getCompany();
+      String name=info.getFeatures1();
      
         JOptionPane.showMessageDialog(null, name);
     return true;
