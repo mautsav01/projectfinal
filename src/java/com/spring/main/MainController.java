@@ -6,7 +6,7 @@
 package com.spring.main;
 
 import com.oreilly.servlet.MultipartRequest;
-import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+
 import com.oreilly.servlet.multipart.FileRenamePolicy;
 import com.spring.connect.Connect;
 import com.spring.entity.Hotelinfo;
@@ -15,14 +15,11 @@ import com.spring.entity.Sinup;
 import com.spring.statement.Statementlogin;
 import com.spring.statement.Statementsinup;
 import java.io.File;
-import java.io.IOException;
+
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.ArrayList;
+
 import java.util.Enumeration;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.swing.JOptionPane;
 import org.apache.commons.io.FilenameUtils;
@@ -116,45 +113,45 @@ public class MainController {
     @RequestMapping(value="/Hotelsinup",method=RequestMethod.POST)
     public String Hotel(){
 
-    String path="D://images";
+    String path=request.getServletContext().getRealPath("")+"/images";
       MultipartRequest mrequest;
         try {
             mrequest = new MultipartRequest(request, path, 300000000, new FileRenamePolicy() {
                 
                 @Override
                 public File rename(File file) {
-                    String name = "khaku-" + String.valueOf(new java.util.Date().getTime());
+                    String name = "Hotel-" + String.valueOf(new java.util.Date().getTime());
                     String ext = FilenameUtils.getExtension(file.getName());
                     return new File(file.getParentFile(), name + "." + ext);
                     
                 }
                 public File rename1(File file1){
-                    String name1="khakku-" + String.valueOf(new java.util.Date().getTime());
+                    String name1="Hotel-" + String.valueOf(new java.util.Date().getTime());
                     String ext1=FilenameUtils.getExtension(file1.getName());;
                     return new File(file1.getParentFile(), name1 + "." + ext1);
                     
                 }
                 public File rename2(File file2){
-                    String name2="khakku-" + String.valueOf(new java.util.Date().getTime());
+                    String name2="Hotel-" + String.valueOf(new java.util.Date().getTime());
                     String ext2=FilenameUtils.getExtension(file2.getName());;
                     return new File(file2.getParentFile(), name2 + "." + ext2);
                     
                 }
                 public File rename3(File file3){
-                    String name3="khakku-" + String.valueOf(new java.util.Date().getTime());
+                    String name3="Hotel-" + String.valueOf(new java.util.Date().getTime());
                     String ext3=FilenameUtils.getExtension(file3.getName());;
                     return new File(file3.getParentFile(), name3 + "." + ext3);
                     
                 }
                 
                 public File rename4(File file4){
-                    String name4="khakku-" + String.valueOf(new java.util.Date().getTime());
+                    String name4="Hotel-" + String.valueOf(new java.util.Date().getTime());
                     String ext4=FilenameUtils.getExtension(file4.getName());;
                     return new File(file4.getParentFile(), name4 + "." + ext4);
                     
                 }
                 public File rename5(File file5){
-                    String name5="khakku-" + String.valueOf(new java.util.Date().getTime());
+                    String name5="Hotel-" + String.valueOf(new java.util.Date().getTime());
                     String ext5=FilenameUtils.getExtension(file5.getName());;
                     return new File(file5.getParentFile(), name5 + "." + ext5);
                     
@@ -194,13 +191,13 @@ public class MainController {
     String ext4 = FilenameUtils.getExtension(filename4);
     String ext5=FilenameUtils.getExtension(filename5);
     
- /*if(ext.equalsIgnoreCase("png") || ext.equalsIgnoreCase("jpg") || ext.equalsIgnoreCase("jpeg")||ext.equalsIgnoreCase("mp4") &&
+ if(ext.equalsIgnoreCase("png") || ext.equalsIgnoreCase("jpg") || ext.equalsIgnoreCase("jpeg")||ext.equalsIgnoreCase("mp4") &&
        ext1.equalsIgnoreCase("png") || ext1.equalsIgnoreCase("jpg") || ext1.equalsIgnoreCase("jpeg")||ext1.equalsIgnoreCase("mp4") &&
          ext2.equalsIgnoreCase("png") || ext2.equalsIgnoreCase("jpg") || ext2.equalsIgnoreCase("jpeg")||ext2.equalsIgnoreCase("mp4") &&
          ext3.equalsIgnoreCase("png") || ext3.equalsIgnoreCase("jpg") || ext3.equalsIgnoreCase("jpeg")||ext3.equalsIgnoreCase("mp4") &&
          ext4.equalsIgnoreCase("png") || ext4.equalsIgnoreCase("jpg") || ext4.equalsIgnoreCase("jpeg")||ext4.equalsIgnoreCase("mp4") &&
          ext5.equalsIgnoreCase("png") || ext5.equalsIgnoreCase("jpg") || ext5.equalsIgnoreCase("jpeg")||ext5.equalsIgnoreCase("mp4")){
-   */  
+  
      String hotelname = mrequest.getParameter("hotelname");
      String quotes = mrequest.getParameter("quotes");
      String address = mrequest.getParameter("address");
@@ -221,7 +218,7 @@ public class MainController {
       String roomtype4 = mrequest.getParameter("roomtype4");
      String price4=mrequest.getParameter("price4");
    
-     
+ 
      Connect con=new Connect();
         
             PreparedStatement pst=con.cn.prepareStatement("insert into hotelinfo(company,quotes,address,coverpic,description,features,features1,features2,features3,features4,pic,latitude,longitude,roomtype1,price1,pic1,roomtype2,price2,pic2,roomtype3,price3,pic3,roomtype4,price4,pic4) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
@@ -260,19 +257,16 @@ public class MainController {
             int rs=pst.executeUpdate();
             if(rs>0){
                 JOptionPane.showMessageDialog(null, "value inserted!!");
-            }
+            }}else{
+ JOptionPane.showMessageDialog(null, "invalid file format");
+ }
             
             
             
         } catch (Exception ex) {
            JOptionPane.showMessageDialog(null, ex);
         }
-     
-     
-      
-     
-     
-     
+
 return "redirect:/welcome0";  
  }
     
