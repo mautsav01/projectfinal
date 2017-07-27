@@ -1,3 +1,8 @@
+<%@page import="javax.swing.JOptionPane"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="com.spring.connect.Connect"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,34 +52,42 @@
 We will reply you as soon as possible !!</div>
                     </div>
 
+ <%
+String hotelname=request.getParameter("company");
 
-                    <form action="#cafebackend" method="post" data-form-title="CONTACT FORM">
+Connect con=new Connect();
+Statement st=con.cn.createStatement();
+ResultSet rs=st.executeQuery("select * from hotelinfo where company='"+hotelname+"'");
+while(rs.next())
+{
 
-                        <input type="hidden" value="FNKfkEMenDBzal6ftLSw6EMzWSAABVJTYj5lpXThyD+oGPtogHkZcmTN/x+0cH6Si7Adur3FBIeWcB88qrIoQOJcEb0SqEwd6udnvqgOU/NaddfxJ8KrVTq4mBRZ1KZP" data-form-email="true">
+%>
+                    
+<form action="${pageContext.servletContext.contextPath}/cafelogin?id=<%=rs.getInt("id")%>" method="post" enctype="multipart/form-data">
 
-                        <div class="row row-sm-offset">
-
-                            
-                            
-                            
-                            
-                            <div class="col-xs-12 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Cafe Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
-                                </div>
-                            </div>
-							<div class="col-xs-12 col-md-3">
+             <div class="row row-sm-offset">
+  
+  <div class="col-xs-12 col-md-3">
+ <div class="form-group">
+ <label class="form-control-label" for="form1-0-name">Cafe Name<span class="form-asterisk">*</span></label>
+  <input type="text" class="form-control" name="company" value="<%=rs.getString("company")%>"  >
+  <%
+    
+  %>
+  
+  </div>
+  </div>
+<div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Cafe Quotes<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="quotes" value="<%=rs.getString("quotes")%>" >
                                 </div>
                             </div>
 							
 							<div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Cafe Address<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="address" value="<%=rs.getString("address")%>">
                                 </div>
                             </div>
 
@@ -84,51 +97,51 @@ We will reply you as soon as possible !!</div>
  
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                Cafe-Cover pic:     <input type="file" class="form-control" name="email"  data-form-field="Email" id="form1-0-email">
+                                Cafe-Cover pic:     <input type="file" class="form-control" name="file">
                                 </div>
                             </div>
 							
 								<div class="col-xs-12 col-md-12">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Cafe Description<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="description" value="<%=rs.getString("description")%>" >
                                 </div>
                             </div>
 								<div class="col-xs-12 col-md-12">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Cafe features<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="features" value="<%=rs.getString("features")%>">
                                 </div>
                             </div>
 <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="features1" value="<%=rs.getString("features1")%>">
                                 </div>
                             </div>
 							
 <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <label class="form-control-label" for="form1-0-name">Feature2<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="features2" value="<%=rs.getString("features2")%>">
                                 </div>
                             </div>
 <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <label class="form-control-label" for="form1-0-name">Feature3<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="features3" value="<%=rs.getString("features3")%>" >
                                 </div>
                             </div>
 <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <label class="form-control-label" for="form1-0-name">Feature4<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="features4" value="<%=rs.getString("features4")%>" >
                                 </div>
                             </div>
 							
 						 <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Food-Pic:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                Food-Pic:     <input type="file" class="form-control" name="file1">
                                 </div>
                             </div>
 							<br/><br/>
@@ -139,13 +152,13 @@ We will reply you as soon as possible !!</div>
 					<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Latitude<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="latitude" value="<%=rs.getString("latitude")%>" >
                                 </div>
                             </div>
 		<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Longitude<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="longitude" value="<%=rs.getString("longitude")%>" >
                                 </div>
                             </div>
 
@@ -157,123 +170,123 @@ We will reply you as soon as possible !!</div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="foodname1" value="<%=rs.getString("foodname1")%>" >
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="paisa1" value="<%=rs.getString("paisa1")%>" >
                                 </div>
                             </div>
 							
 								<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="foodname2" value="<%=rs.getString("foodname2")%>" >
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="paisa2" value="<%=rs.getString("paisa2")%>">
                                 </div>
                             </div>
 	<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="foodname3" value="<%=rs.getString("foodname3")%>">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="paisa3" value="<%=rs.getString("paisa3")%>">
                                 </div>
                             </div>
 	<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="foodname4" value="<%=rs.getString("foodname4")%>">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="paisa4" value="<%=rs.getString("paisa4")%>">
                                 </div>
                             </div>
 	<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="foodname5" value="<%=rs.getString("foodname5")%>">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="paisa5" value="<%=rs.getString("paisa5")%>">
                                 </div>
                             </div>
 
 								<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="foodname6" value="<%=rs.getString("foodname6")%>">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="paisa6" value="<%=rs.getString("paisa6")%>">
                                 </div>
                             </div>
 	<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="foodname7" value="<%=rs.getString("foodname7")%>">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="paisa7" value="<%=rs.getString("paisa7")%>">
                                 </div>
                             </div>
 	<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="foodname8" value="<%=rs.getString("foodname8")%>">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="paisa8" value="<%=rs.getString("paisa8")%>">
                                 </div>
                             </div>
 	<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="foodname9" value="<%=rs.getString("foodname9")%>">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="paisa9" value="<%=rs.getString("paisa9")%>">
                                 </div>
                             </div>
 	<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Food Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="foodname10" value="<%=rs.getString("foodname10")%>">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="paisa10" value="<%=rs.getString("paisa10")%>">
                                 </div>
                             </div>
 
@@ -286,12 +299,12 @@ We will reply you as soon as possible !!</div>
   </div>
    </center>							
 
-							
-						
-                        <div class="col-xs-12 col-md-12"><button type="submit" class="btn btn-primary">Submit</button></div>
+  <div class="col-xs-12 col-md-12"><button type="submit" class="btn btn-primary">Submit</button></div>
 
-                    </form>
+                
                 </div>
+                    </form>
+  <%}%>
             </div>
         </div>
     </div>
@@ -304,7 +317,7 @@ We will reply you as soon as possible !!</div>
   <script src="${pageContext.servletContext.contextPath}/assets/theme/js/script.js"></script>
   <script src="${pageContext.servletContext.contextPath}/assets/formoid/formoid.min.js"></script>
   <input name="animation" type="hidden">
-  </form>
+  
   <div class="col-xs-12 col-md-12">
 <center>
   <h1>
@@ -312,6 +325,6 @@ We will reply you as soon as possible !!</div>
   </h1>
 </center>
   </div>
-</form>
+
   </body>
 </html>

@@ -57,7 +57,7 @@ We will reply you as soon as possible !!</div>
   <div class="col-xs-12 col-md-3">
  <div class="form-group">
  <label class="form-control-label" for="form1-0-name">Cafe Name<span class="form-asterisk">*</span></label>
-  <input type="text" class="form-control" name="company" >
+  <input type="text" class="form-control" name="company" value="<%=hotelname%>" readonly="">
   </div>
   </div>
 <div class="col-xs-12 col-md-3">
