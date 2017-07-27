@@ -48,8 +48,9 @@
                     <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
                         <li class="nav-item"><a class="nav-link link" href="#/">OVERVIEW</a></li><li class="nav-item"><a class="nav-link link" href="#/">GALLERY</a></li>
                         <li class="nav-item"><a class="nav-link link" href="${pageContext.servletContext.contextPath}/welcome0">LOGIN</a></li><li class="nav-item">
-<form>
-  <input type="text" name="search" placeholder="Search..">
+<form action="${pageContext.servletContext.contextPath}/search" method="post">
+  <input type="text" name="search" placeholder="Query... " >
+  <input type="submit" value="search" class="btn btn-sm btn-white">
 </form>
 </li>
 <style> 
@@ -57,13 +58,15 @@ input[type=text] {
     width: 130px;
     box-sizing: border-box;
     border: 2px solid #ccc;
-    border-radius: 4px;
+    border-radius: 3px;
     font-size: 16px;
     background-color: white;
-    background-image: url('searchicon.png');
+    
     background-position: 10px 10px; 
     background-repeat: no-repeat;
-    padding: 3px 20px 3px 20px;
+    padding: 3px 3px 8px 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }

@@ -19,12 +19,6 @@
   <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/assets/mobirise/css/mbr-additional.css" type="text/css">
   
   
-    <!-- =======================================================
-        Theme Name: Delicious
-        Theme URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-        Author: BootstrapMade.com
-        Author URL: https://bootstrapmade.com
-    ======================================================= -->
   </head>
   <body>
     <!--banner-->

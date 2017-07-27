@@ -16,6 +16,7 @@ import com.spring.statement.Statementlogin;
 import com.spring.statement.Statementsinup;
 import java.io.File;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -106,7 +107,7 @@ public class MainController {
 
     @RequestMapping("/welcomehotelexample")
     public String Hotelexample() {
-        // return ("redirect:/welcome2");
+        // return ("redirect:/welcomehotelexample");
         return ("hoteltemplateexample");
 
     }
@@ -781,11 +782,12 @@ public String hotellogin(){
          //  JOptionPane.showMessageDialog(null,"thik xa");
            if(rs>0){
                JOptionPane.showMessageDialog(null, "Update successful");
+               con.cn.close();
            }
            
     }
             
-            
+           
         } catch (Exception ex) {
             ex.printStackTrace();
           JOptionPane.showMessageDialog(null, ex);
@@ -799,7 +801,22 @@ return "redirect:/welcome0";
 
 
 }
-
-
+@RequestMapping("/search")
+public String Search(@RequestParam ("search") String search,Model model) throws SQLException{
+   
+  model.addAttribute("search",search);
+    
+    if(search.contains("hotel")){
+    
+    return ("redirect:/welcomehotelexample");
+    }else
+    
+    
+    return("redirect:/welcome2");
+    
+    
+    
+        
+}
 
 }
