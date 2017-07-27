@@ -602,7 +602,203 @@ return "redirect:/welcome0";
 return "redirect:/welcome0";  
      
     } 
+@RequestMapping("/Hotellogin")
+public String hotellogin(){
 
+     int id=Integer.parseInt(request.getParameter("id"));
+     JOptionPane.showMessageDialog(null, id);
+     String path=request.getServletContext().getRealPath("")+"/images";
+      MultipartRequest mrequest;
+        try {
+            mrequest = new MultipartRequest(request, path, 300000000, new FileRenamePolicy() {
+                
+                @Override
+                public File rename(File file) {
+                    String name = "Hotel-" + String.valueOf(new java.util.Date().getTime());
+                    String ext = FilenameUtils.getExtension(file.getName());
+                    return new File(file.getParentFile(), name + "." + ext);
+                    
+                }
+                public File rename1(File file1){
+                    String name1="Hotel-" + String.valueOf(new java.util.Date().getTime());
+                    String ext1=FilenameUtils.getExtension(file1.getName());;
+                    return new File(file1.getParentFile(), name1 + "." + ext1);
+                    
+                }
+                public File rename2(File file2){
+                    String name2="Hotel-" + String.valueOf(new java.util.Date().getTime());
+                    String ext2=FilenameUtils.getExtension(file2.getName());;
+                    return new File(file2.getParentFile(), name2 + "." + ext2);
+                    
+                }
+                public File rename3(File file3){
+                    String name3="Hotel-" + String.valueOf(new java.util.Date().getTime());
+                    String ext3=FilenameUtils.getExtension(file3.getName());;
+                    return new File(file3.getParentFile(), name3 + "." + ext3);
+                    
+                }
+                
+                public File rename4(File file4){
+                    String name4="Hotel-" + String.valueOf(new java.util.Date().getTime());
+                    String ext4=FilenameUtils.getExtension(file4.getName());;
+                    return new File(file4.getParentFile(), name4 + "." + ext4);
+                    
+                }
+                public File rename5(File file5){
+                    String name5="Hotel-" + String.valueOf(new java.util.Date().getTime());
+                    String ext5=FilenameUtils.getExtension(file5.getName());;
+                    return new File(file5.getParentFile(), name5 + "." + ext5);
+                    
+                }
+                
+            });
+       
+    String filename = null;
+    Enumeration files = mrequest.getFileNames();
+    String filename1=null;
+   // Enumeration files1 = mrequest.getFileNames();
+    String filename2 = null;
+   // Enumeration files2 = mrequest.getFileNames();
+    String filename3=null;
+   // Enumeration files3 = mrequest.getFileNames();
+    
+    String filename4=null;
+   // Enumeration files4 = mrequest.getFileNames();
+    
+    String filename5=null;
+    Enumeration files5 = mrequest.getFileNames();
+    
+    
+       filename = mrequest.getFilesystemName(files.nextElement().toString());
+        filename1=mrequest.getFilesystemName(files.nextElement().toString());
+        filename2 = mrequest.getFilesystemName(files.nextElement().toString());
+        filename3=mrequest.getFilesystemName(files.nextElement().toString());
+        filename4 = mrequest.getFilesystemName(files.nextElement().toString());
+        filename5=mrequest.getFilesystemName(files.nextElement().toString());
+ 
+        
+    
+    String ext = FilenameUtils.getExtension(filename);
+    String ext1=FilenameUtils.getExtension(filename1);
+    String ext2 = FilenameUtils.getExtension(filename2);
+    String ext3=FilenameUtils.getExtension(filename3);
+    String ext4 = FilenameUtils.getExtension(filename4);
+    String ext5=FilenameUtils.getExtension(filename5);
+    
+ if(ext.equalsIgnoreCase("png") || ext.equalsIgnoreCase("jpg") || ext.equalsIgnoreCase("jpeg")||ext.equalsIgnoreCase("mp4") &&
+       ext1.equalsIgnoreCase("png") || ext1.equalsIgnoreCase("jpg") || ext1.equalsIgnoreCase("jpeg")||ext1.equalsIgnoreCase("mp4") &&
+         ext2.equalsIgnoreCase("png") || ext2.equalsIgnoreCase("jpg") || ext2.equalsIgnoreCase("jpeg")||ext2.equalsIgnoreCase("mp4") &&
+         ext3.equalsIgnoreCase("png") || ext3.equalsIgnoreCase("jpg") || ext3.equalsIgnoreCase("jpeg")||ext3.equalsIgnoreCase("mp4") &&
+         ext4.equalsIgnoreCase("png") || ext4.equalsIgnoreCase("jpg") || ext4.equalsIgnoreCase("jpeg")||ext4.equalsIgnoreCase("mp4") &&
+         ext5.equalsIgnoreCase("png") || ext5.equalsIgnoreCase("jpg") || ext5.equalsIgnoreCase("jpeg")||ext5.equalsIgnoreCase("mp4")){
+  
+     String hotelname = mrequest.getParameter("hotelname");
+     String quotes = mrequest.getParameter("quotes");
+     String address = mrequest.getParameter("address");
+     String description = mrequest.getParameter("description");
+     String features = mrequest.getParameter("features");
+     String features1 = mrequest.getParameter("features1");
+     String features2 = mrequest.getParameter("features2");
+     String features3 = mrequest.getParameter("features3");
+     String features4 = mrequest.getParameter("features4");
+     String latitude = mrequest.getParameter("latitude");
+     String longitude = mrequest.getParameter("longitude");
+     String roomtype1 = mrequest.getParameter("roomtype1");
+     String price1=mrequest.getParameter("price1");
+      String roomtype2 = mrequest.getParameter("roomtype2");
+     String price2=mrequest.getParameter("price2");
+      String roomtype3 = mrequest.getParameter("roomtype3");
+     String price3=mrequest.getParameter("price3");
+      String roomtype4 = mrequest.getParameter("roomtype4");
+     String price4=mrequest.getParameter("price4");
+   
+ 
+     Connect con=new Connect();
+        
+          String query="update hotelinfo set company=?,quotes=?,address=?,coverpic=?,description=?,features=?,"
+                    + "features1=?,features2=?,features3=?,features4=?,pic=?,latitude=?,longitude=?,roomtype1=?,price1=?,pic1=?,roomtype2=?,price2=?,pic2=?,"
+                    + "roomtype3=?,price3=?,pic3=?,roomtype4=?,price4=?,pic4=?,foodname1=?,paisa1=?,foodname2=?,paisa2=?,foodname3=?,paisa3=?,foodname4=?,"
+                    + "paisa4=?,foodname5=?,paisa5=?,foodname6=?,paisa6=?,foodname7=?,paisa7=?,foodname8=?,paisa8=?,foodname9=?,paisa9=?,foodname10=?,paisa10=? where id='"+id+"'";
+          PreparedStatement pst=con.cn.prepareStatement(query);
+             pst.setString(1,hotelname);
+            pst.setString(2, quotes);
+            pst.setString(3, address);
+            pst.setString(4, filename5);
+            pst.setString(5, description);
+            pst.setString(6, features);
+            pst.setString(7, features1);
+            pst.setString(8, features2);
+            pst.setString(9, features3);
+            pst.setString(10, features4);
+            pst.setString(11, filename4);
+            pst.setString(12, latitude);
+            pst.setString(13, longitude);
+           
+           
+               pst.setString(14,roomtype1 );
+            pst.setString(15, price1);
+            pst.setString(16, filename3);
+            
+            pst.setString(17, roomtype2);
+            pst.setString(18, price2);
+            pst.setString(19, filename2);
+            
+            pst.setString(20, roomtype3);
+            pst.setString(21, price3);
+            pst.setString(22, filename1);
+            
+            pst.setString(23, roomtype4);
+            pst.setString(24, price4);
+            pst.setString(25, filename);
+        
+           
+           
+           ////////////////
+           pst.setString(26,null);
+           
+           pst.setString(27, null);
+           pst.setString(28,null);
+           pst.setString(29, null);
+           pst.setString(30,null);
+           pst.setString(31, null);
+           pst.setString(32,null);
+           pst.setString(33, null);
+           pst.setString(34,null);
+           pst.setString(35, null);
+           pst.setString(36,null);
+           pst.setString(37, null);
+           pst.setString(38,null);
+           pst.setString(39, null);
+           pst.setString(40,null);
+           pst.setString(41, null);
+           pst.setString(42,null);
+           pst.setString(43, null);
+           pst.setString(44,null);
+           pst.setString(45, null);
+       
+         
+           int rs=pst.executeUpdate();
+         //  JOptionPane.showMessageDialog(null,"thik xa");
+           if(rs>0){
+               JOptionPane.showMessageDialog(null, "Update successful");
+           }
+           
+    }
+            
+            
+        } catch (Exception ex) {
+            ex.printStackTrace();
+          JOptionPane.showMessageDialog(null, ex);
+        }
+ 
+    
+    
+return "redirect:/welcome0";  
+     
+
+
+
+}
 
 
 

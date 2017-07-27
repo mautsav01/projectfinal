@@ -1,3 +1,5 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
 <%@page import="com.spring.connect.Connect"%>
 <!DOCTYPE html>
 <html>
@@ -24,13 +26,7 @@
   
 </head>
 <body>
-    <%
-   String hotelname=request.getParameter("company");
-    
-    
-    
-    %>
-
+   
 <section class="mbr-section" id="form1-0" style="background-color: rgb(255, 255, 255); padding-top: 120px; padding-bottom: 120px;">
     
     <div class="mbr-section mbr-section__container mbr-section__container--middle">
@@ -44,20 +40,29 @@
         </div>
     </div>
     <div class="mbr-section mbr-section-nopadding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-lg-10 col-lg-offset-1" data-form-type="formoid">
+ <div class="container">
+ <div class="row">
+ <div class="col-xs-12 col-lg-10 col-lg-offset-1" data-form-type="formoid">
 
 
-                    <div data-form-alert="true">
-                        <div hidden="" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center">Thanks for filling out form!
+  <div data-form-alert="true">
+ <div hidden="" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center">Thanks for filling out form!
 We will reply you as soon as possible !!</div>
                     </div>
 
 
-                    <form action="#cafebackend" method="post" data-form-title="CONTACT FORM">
+ <%
+String hotelname=request.getParameter("company");
 
-                        <input type="hidden" value="FNKfkEMenDBzal6ftLSw6EMzWSAABVJTYj5lpXThyD+oGPtogHkZcmTN/x+0cH6Si7Adur3FBIeWcB88qrIoQOJcEb0SqEwd6udnvqgOU/NaddfxJ8KrVTq4mBRZ1KZP" data-form-email="true">
+Connect con=new Connect();
+Statement st=con.cn.createStatement();
+ResultSet rs=st.executeQuery("select * from hotelinfo where company='"+hotelname+"'");
+while(rs.next())
+{
+
+%>
+
+                    <form action="${pageContext.servletContext.contextPath}/Hotellogin?id=<%=rs.getInt("id")%>" method="post" enctype="multipart/form-data">
 
                         <div class="row row-sm-offset">
 
@@ -68,20 +73,20 @@ We will reply you as soon as possible !!</div>
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Hotel Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" value="<%=hotelname%>" name="hotelname" readonly="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" value="<%=rs.getString("company")%>" name="hotelname">
                                 </div>
                             </div>
 							<div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Hotel Quotes<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="quotes" value="<%=rs.getString("quotes")%>">
                                 </div>
                             </div>
 							
 							<div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Hotel Address<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="address" value="<%=rs.getString("address")%>">
                                 </div>
                             </div>
 
@@ -91,51 +96,51 @@ We will reply you as soon as possible !!</div>
  
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                hotel-Cover pic:     <input type="file" class="form-control" name="email"  data-form-field="Email" id="form1-0-email">
+                                Hotel-Cover pic:     <input type="file" class="form-control" name="file" >
                                 </div>
                             </div>
 							
 								<div class="col-xs-12 col-md-12">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Hotel Description<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="description" value="<%=rs.getString("description")%>">
                                 </div>
                             </div>
 								<div class="col-xs-12 col-md-12">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Hotel features<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="features" value="<%=rs.getString("features")%>">
                                 </div>
                             </div>
 <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="features1" value="<%=rs.getString("features1")%>">
                                 </div>
                             </div>
 							
 <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <label class="form-control-label" for="form1-0-name">Feature2<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="features2" value="<%=rs.getString("features2")%>">
                                 </div>
                             </div>
 <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <label class="form-control-label" for="form1-0-name">Feature3<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="features3" value="<%=rs.getString("features3")%>">
                                 </div>
                             </div>
 <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Feature1<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <label class="form-control-label" for="form1-0-name">Feature4<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="features4" value="<%=rs.getString("features4")%>">
                                 </div>
                             </div>
 							
 						 <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Hotel's-Garden/Parking:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                Hotel's-Garden/Parking:     <input type="file" class="form-control" name="file1">
                                 </div>
                             </div>
 							<br/><br/>
@@ -146,13 +151,13 @@ We will reply you as soon as possible !!</div>
 					<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Latitude<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="latitude" value="<%=rs.getString("latitude")%>" >
                                 </div>
                             </div>
 		<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Longitude<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="longitude" value="<%=rs.getString("longitude")%>">
                                 </div>
                             </div>
 
@@ -164,17 +169,17 @@ We will reply you as soon as possible !!</div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Room Type<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="roomtype1" value="<%=rs.getString("roomtype1")%>">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="price1" value="<%=rs.getString("price1")%>">
                                 </div>
                             </div>
                                  <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                Room's Picture:     <input type="file" class="form-control" name="file2">
                                 </div>
                             </div>
                                                         
@@ -183,36 +188,36 @@ We will reply you as soon as possible !!</div>
 								<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Room Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="roomtype2" value="<%=rs.getString("roomtype2")%>">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="price2" value="<%=rs.getString("price2")%>">
                                 </div>
                             </div>
                                                            <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                Room's Picture:     <input type="file" class="form-control" name="file3">
                                 </div>
                             </div>
                         
                         	<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Room Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="roomtype3" value="<%=rs.getString("roomtype3")%>">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="price3" value="<%=rs.getString("price3")%>">
                                 </div>
                             </div>
                                                            <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                Room's Picture:     <input type="file" class="form-control" name="file4">
                                 </div>
                             </div>
                         
@@ -220,18 +225,18 @@ We will reply you as soon as possible !!</div>
                         	<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Room Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="roomtype4" value="<%=rs.getString("roomtype4")%>">
                                 </div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-0-name">
+                                    <input type="text" class="form-control" name="price4" value="<%=rs.getString("price4")%>">
                                 </div>
                             </div>
                                                            <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="email" required="" data-form-field="Email" id="form1-0-email">
+                                Room's Picture:     <input type="file" class="form-control" name="file5">
                                 </div>
                             </div>
                         
@@ -250,7 +255,7 @@ We will reply you as soon as possible !!</div>
 						
                         <div class="col-xs-12 col-md-12"><button type="submit" class="btn btn-primary">Submit</button></div>
 
-                    </form>
+                    </form><%}%>
                 </div>
             </div>
         </div>
@@ -272,6 +277,6 @@ We will reply you as soon as possible !!</div>
   </h1>
 </center>
   </div>
-</form>
+
   </body>
 </html>
