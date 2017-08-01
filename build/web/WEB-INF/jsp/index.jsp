@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <title>Hotel Haunt</title>
 <head>
   <!-- Site made with Mobirise Website Builder v3.12.1, # -->
   <meta charset="UTF-8">
@@ -35,7 +36,7 @@
 
                     <div class="navbar-brand">
                         <a href="#" class="navbar-logo"><img src="${pageContext.servletContext.contextPath}/assets/images/logo.png" alt="Mobirise"></a>
-                        <a class="navbar-caption" href="#">MOBIRISE</a>
+                        <a class="navbar-caption" href="#">Hotel Haunt</a>
                     </div>
 
                 </div>
@@ -96,8 +97,9 @@ input[type=text]:focus {
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-xs-center">
-                <h3 class="mbr-section-title display-2">ARTICLE HEADER</h3>
-                <div class="lead"><p>Article header with background image and parallax effect.</p></div>
+                <br><br><br>
+                <h3 class="mbr-section-title display-2">Hotel Haunt</h3>
+                <div class="lead"><h1><p>Provides you Free Platform for Creating your Websites</p></h1></div>
                 
             </div>
         </div>
@@ -115,10 +117,10 @@ input[type=text]:focus {
               <div class="card cart-block">
                   <div class="card-img"><img src="assets/images/table.jpg" class="card-img-top"></div>
                   <div class="card-block">
-                    <h4 class="card-title">Bootstrap 4</h4>
-                    <h5 class="card-subtitle">Bootstrap 4 has been noted</h5>
-                    <p class="card-text">Bootstrap 4 has been noted as one of tipped to develop websites using this framework.</p>
-                    <div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
+                    <h4 class="card-title">Cafe One</h4>
+                    <h5 class="card-subtitle">Cafe One at your service</h5>
+                    <p class="card-text">We use to organise Parties,function and many more.To view our details there is <b>CLICK</b> Button for you</p>
+                    <div class="card-btn"><a href="${pageContext.servletContext.contextPath}/cafeone?msg=cafe1" class="btn btn-primary">CLICK</a></div>
                     </div>
                 </div>
             </div>
@@ -128,10 +130,10 @@ input[type=text]:focus {
                 <div class="card cart-block">
                     <div class="card-img"><img src="assets/images/desktop.jpg" class="card-img-top"></div>
                     <div class="card-block">
-                        <h4 class="card-title">Responsive</h4>
-                        <h5 class="card-subtitle">One of Bootstrap 4's big points</h5>
-                        <p class="card-text">One of Bootstrap 4's bigve use of this by generating highly responsive website for you.</p>
-                        <div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
+                        <h4 class="card-title">Hotel One</h4>
+                        <h5 class="card-subtitle">Best place to be when you are travelling.</h5>
+                        <p class="card-text">We Provide the finest Room in an affordable cost.To know more there is <b>MORE</b> for you </p>
+                        <div class="card-btn"><a href="${pageContext.servletContext.contextPath}/cafeone?msg=hotelone" class="btn btn-primary">MORE</a></div>
                     </div>
                 </div>
             </div>
@@ -141,10 +143,10 @@ input[type=text]:focus {
                 <div class="card cart-block">
                     <div class="card-img"><img src="assets/images/coworkers.jpg" class="card-img-top"></div>
                     <div class="card-block">
-                        <h4 class="card-title">Web Fonts</h4>
-                        <h5 class="card-subtitle">Google has a highly exhaustive list of fonts</h5>
-                        <p class="card-text">Google has aMobirise makes it easy for you to use them on your website easily and freely.</p>
-                        <div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
+                        <h4 class="card-title">Hotel Two</h4>
+                        <h5 class="card-subtitle">HOtel Two,Your Travel Partner</h5>
+                        <p class="card-text">Oh! My Well Travellers,Hotel two Welcome You.This  <b>FIND</b> be helpful for your Journey</p>
+                        <div class="card-btn"><a href="${pageContext.servletContext.contextPath}/cafeone?msg=hoteltwo" class="btn btn-primary">FIND</a></div>
                     </div>
                 </div>
             </div>
@@ -154,10 +156,10 @@ input[type=text]:focus {
                 <div class="card cart-block">
                     <div class="card-img"><img src="assets/images/code-man.jpg" class="card-img-top"></div>
                     <div class="card-block">
-                        <h4 class="card-title">Unlimited Sites</h4>
-                        <h5 class="card-subtitle">Mobirise gives you the freedom to develop</h5>
-                        <p class="card-text">Mobirise gives you the freedom to dit is a desktop app.</p>
-                        <div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
+                        <h4 class="card-title">Cafe Two</h4>
+                        <h5 class="card-subtitle">Freedom to have anything until you pay!!</h5>
+                        <p class="card-text">Provides you quality food and quality time!! </p>
+                        <div class="card-btn"><a href="${pageContext.servletContext.contextPath}/cafeone?msg=cafetwo" class="btn btn-primary">MORE</a></div>
                     </div>
                 </div>
             </div>

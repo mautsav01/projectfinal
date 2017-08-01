@@ -81,6 +81,6 @@
     <mvc:resources mapping="/assets/jss/**" location="/assets/jss/"/>
     <mvc:resources mapping="/assets/imgs/**" location="/assets/imgs/"/>
     <mvc:resources mapping="/assets/fontss/**" location="/assets/fontss/"/>
-    
+    <mvc:resources mapping="images/**" location="/images/"/>
      
 </beans>

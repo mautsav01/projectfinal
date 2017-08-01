@@ -818,5 +818,17 @@ public String Search(@RequestParam ("search") String search,Model model) throws 
     
         
 }
+@RequestMapping("/cafeone")
+public String cafeone(@RequestParam ("msg") String msg,Model model){
+    
+    if (msg.equals("hotelone") || msg.equals("hoteltwo")){
+        model.addAttribute("msg",msg);
+    return ("redirect:/welcomehotelexample");
+        
+    }else
+        model.addAttribute("msg",msg);
+    return("redirect:/welcome2");
+    
+}
 
 }
