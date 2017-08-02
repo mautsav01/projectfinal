@@ -43,25 +43,31 @@ while(rs.next())
   <body>
     <!--banner-->
     <section id="banner">
-      <div class="bg-color">
+                      
+        <div class="bg-color">
         <header id="header">
             <div class="container">
                 <div id="mySidenav" class="sidenav">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                  <a href="#about">About</a>
+                  <a href="#">About</a>
                   <a href="#googleMap">GoogleMap</a>
                   <a href="#menu-list">Menu</a>
                   <a href="#Book">Book a table</a>
                 </div>
+                
                 <!-- Use any element to open the sidenav -->
                 <span onclick="openNav()" class="pull-right menu-icon">?</span>
             </div>
+               <img src="${pageContext.servletContext.contextPath}/images/<%=rs.getString("pic")%>" alt="" class="img-responsive" width="100%" height="100%">
+  
         </header>
         <div class="container">
         <div class="row">
           <div class="inner text-center">
             <h1 class="logo-name"><%=rs.getString("company")%></h1>
+            <br><br>
             <h2><%=rs.getString("quotes")%></h2>
+            <br><br><br>
             <p><%=rs.getString("address")%></p>
           </div>
         </div>
@@ -73,15 +79,13 @@ while(rs.next())
     <section id="about" class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center marb-35">
-                    <h1 class="header-h"><%=rs.getString("company")%></h1>
-                    <p class="header-p"><%=rs.getString("description")%></div>
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-12">
                         <div class="about-info">
-                            <h2 class="heading"><%=rs.getString("company")%></h2>
-                            <p><%=rs.getString("features")%></p>
+                            <br><br>
+                            <h2 class="heading"><%=rs.getString("features")%></h2>
+                            
                             <div class="details-list">
                                 <ul>
                                     <li><i class="fa fa-check"></i><%=rs.getString("features1")%></li>
@@ -92,10 +96,12 @@ while(rs.next())
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6">
-                        <img src="${pageContext.servletContext.contextPath}/images/<%=rs.getString("pic")%>" alt="" class="img-responsive">
+                                
+                    <div class="col-md-6 col-sm-12">
+                        
+                        <img src="${pageContext.servletContext.contextPath}/images/<%=rs.getString("coverpic")%>">
+                        
                         </div>
-                </div>
                 <div class="col-md-1"></div>
             </div>
         </div>
