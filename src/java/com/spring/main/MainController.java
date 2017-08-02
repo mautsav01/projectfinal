@@ -285,7 +285,7 @@ public class MainController {
             
             int rs=pst.executeUpdate();
             if(rs>0){
-                JOptionPane.showMessageDialog(null, "value inserted!!");
+                JOptionPane.showMessageDialog(null, "SinupSuccessful");
                 con.cn.close();
             }}else{
  JOptionPane.showMessageDialog(null, "invalid file format");
@@ -297,7 +297,7 @@ public class MainController {
            JOptionPane.showMessageDialog(null, ex);
         }
 
-return "redirect:/welcome0";  
+return "redirect:/";  
  }
  /////////////////////////////////////////////////////////////////////////////
     
@@ -447,7 +447,7 @@ return "redirect:/welcome0";
           JOptionPane.showMessageDialog(null, ex);
         }
         
-return "redirect:/welcome0";  
+return "redirect:/";  
 
 }
 
@@ -600,7 +600,7 @@ return "redirect:/welcome0";
         }
 
         
-return "redirect:/welcome0";  
+return "redirect:/";  
      
     } 
 @RequestMapping("/Hotellogin")
@@ -806,7 +806,7 @@ public String Search(@RequestParam ("search") String search,Model model) throws 
    
   model.addAttribute("search",search);
     
-    if(search.contains("hotel")){
+    if(search.contains("Hotel") || search.contains("hotel")){
     
     return ("redirect:/welcomehotelexample");
     }else
@@ -821,7 +821,7 @@ public String Search(@RequestParam ("search") String search,Model model) throws 
 @RequestMapping("/cafeone")
 public String cafeone(@RequestParam ("msg") String msg,Model model){
     
-    if (msg.equals("hotelone") || msg.equals("hoteltwo")){
+    if (msg.equals("Hotelone") || msg.equals("Hoteltwo")){
         model.addAttribute("msg",msg);
     return ("redirect:/welcomehotelexample");
         

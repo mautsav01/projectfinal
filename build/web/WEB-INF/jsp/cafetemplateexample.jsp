@@ -58,7 +58,7 @@ while(rs.next())
                 <!-- Use any element to open the sidenav -->
                 <span onclick="openNav()" class="pull-right menu-icon">?</span>
             </div>
-               <img src="${pageContext.servletContext.contextPath}/images/<%=rs.getString("pic")%>" alt="" class="img-responsive" width="100%" height="100%">
+               <img src="${pageContext.servletContext.contextPath}/images/<%=rs.getString("coverpic")%>" alt="" class="img-responsive" width="100%" height="100%">
   
         </header>
         <div class="container">
@@ -99,7 +99,7 @@ while(rs.next())
                                 
                     <div class="col-md-6 col-sm-12">
                         
-                        <img src="${pageContext.servletContext.contextPath}/images/<%=rs.getString("coverpic")%>">
+                        <img src="${pageContext.servletContext.contextPath}/images/<%=rs.getString("pic")%>">
                         
                         </div>
                 <div class="col-md-1"></div>
@@ -120,7 +120,7 @@ while(rs.next())
         var myLatLng = {lat: <%=rs.getString("latitude")%>, lng:<%=rs.getString("longitude")%> };
 
         var map = new google.maps.Map(document.getElementById('googleMap'), {
-          zoom: 100,
+          zoom: 15,
           center: myLatLng
         });
 

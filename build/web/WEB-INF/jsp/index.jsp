@@ -236,20 +236,22 @@ input[type=text]:focus {
                 <div class="mbr-company card">
                     <div><img src="assets/images/logo.png" class="card-img-top"></div>
                     <div class="card-block">
-                        <p class="card-text">Footer with solid color background and a contact form, Easily add subscribe and contact forms without any server-side integration.</p>
+                        <p class="card-text">
+                            Project Hotel Haunt is Created in order to enhance the publicity of local hotel,
+                            motels and cafes.This project hepls to built web page just by filling the form  </p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <span class="list-group-icon"><span class="etl-icon icon-phone mbr-iconfont-company-contacts3"></span></span>
-                            <span class="list-group-text">+1 (0) 000 0000 001 or +1 (0) 000 0000 002</span>
+                            <span class="list-group-text">+977-9860680169</span>
                         </li>
                         <li class="list-group-item">
                             <span class="list-group-icon"><span class="etl-icon icon-map-pin mbr-iconfont-company-contacts3"></span></span>
-                            <span class="list-group-text">1234 Street Name, City AA 99999</span>
+                            <span class="list-group-text">14 Ravibhawan kathmandu,Nepal</span>
                         </li>
                         <li class="list-group-item active">
                             <span class="list-group-icon"><span class="etl-icon icon-envelope mbr-iconfont-company-contacts3"></span></span>
-                            <span class="list-group-text"><a href="mailto:support@mobirise.com">support@mobirise.com</a></span>
+                            <span class="list-group-text"><a href="ownercontactadmin">meroid13@gmail.com</a></span>
                         </li>
                     </ul>
                 </div>
@@ -257,10 +259,10 @@ input[type=text]:focus {
             </div>
             <div class="mbr-footer-content col-xs-12 col-md-6 col-lg-3">
                 <h4>Categories</h4>
-                <ul><li><a class="text-white" href="#">Business</a></li><li><a class="text-white" href="#">Design</a></li><li><a class="text-white" href="#">Real life</a></li><li><a class="text-white" href="#">Science</a></li><li><a class="text-white" href="#">Tech</a></li></ul>
+                <ul><li><a class="text-white" href="http://www.himalayanglacier.com/">Travel Guide</a></li><li><a class="text-white" href="https://www.ihg.com/crowneplaza/hotels/gb/en/reservation">Top Hotel of Country</a></li><li><a class="text-white" href="https://www.welcomenepal.com/">Rescue and Help</a></li><li><a class="text-white" href="http://www.tourism.gov.np/">Government</a></li><li><a class="text-white" href="#">About Us</a></li></ul>
             </div>
             <div class="mbr-footer-content col-xs-12 col-md-6 col-lg-3">
-                <p><strong>Contacts</strong><br>Email: support@mobirise.com<br>Phone: +1 (0) 000 0000 001<br>Fax: +1 (0) 000 0000 002<br><br><br><strong>Address</strong><br>1234 Street Name<br>City, AA 99999</p>
+                <p><strong>Contacts</strong><br>sarutezz@gmail.com<br>Phone: +977-9813097199<br>Fax: +1 (0) 000 0000 002<br><br><br><strong>Address</strong><br><br>Sanjaya,Nepal</p>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3" data-form-type="formoid">
 

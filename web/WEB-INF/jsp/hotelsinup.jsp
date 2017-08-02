@@ -234,16 +234,7 @@ We will reply you as soon as possible !!</div>
                             </div>
                         
                         
-        
-<center> 							
-<div class="col-xs-12 col-md-12">
-    
-  <a href="${pageContext.servletContext.contextPath}/welcomehotelexample" target="_blank">Click Here For Example</a>
-   
-      
-  </div>
-   </center>							
-
+ 
 							
 						
                         <div class="col-xs-12 col-md-12"><button type="submit" class="btn btn-primary">Submit</button></div>

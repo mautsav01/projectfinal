@@ -271,19 +271,7 @@ We will reply you as soon as possible !!</div>
                                     <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa10">
                                 </div>
-                            </div>
-
-<center> 							
-<div class="col-xs-12 col-md-12">
-    
-  <a href="${pageContext.servletContext.contextPath}/welcome2" target="_blank">Click Here For Example</a>
-   
-      
-  </div>
-   </center>							
-
-							
-						
+                            </div>					
                         <div class="col-xs-12 col-md-12"><button type="submit" class="btn btn-primary">Submit</button></div>
 
                 
