@@ -97,7 +97,7 @@ while(rs.next())
  
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                Cafe-Cover pic:     <input type="file" class="form-control" name="file">
+                                Cafe-Cover pic(Required):     <input type="file" class="form-control" name="file">
                                 </div>
                             </div>
 							
@@ -141,7 +141,7 @@ while(rs.next())
 							
 						 <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Food-Pic:     <input type="file" class="form-control" name="file1">
+                                Food-Pic(Required):     <input type="file" class="form-control" name="file1">
                                 </div>
                             </div>
 							<br/><br/>
@@ -175,7 +175,7 @@ while(rs.next())
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa1" value="<%=rs.getString("paisa1")%>" >
                                 </div>
                             </div>
@@ -188,7 +188,7 @@ while(rs.next())
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa2" value="<%=rs.getString("paisa2")%>">
                                 </div>
                             </div>
@@ -200,7 +200,7 @@ while(rs.next())
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa3" value="<%=rs.getString("paisa3")%>">
                                 </div>
                             </div>
@@ -212,7 +212,7 @@ while(rs.next())
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa4" value="<%=rs.getString("paisa4")%>">
                                 </div>
                             </div>
@@ -224,7 +224,7 @@ while(rs.next())
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa5" value="<%=rs.getString("paisa5")%>">
                                 </div>
                             </div>
@@ -237,7 +237,7 @@ while(rs.next())
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa6" value="<%=rs.getString("paisa6")%>">
                                 </div>
                             </div>
@@ -249,7 +249,7 @@ while(rs.next())
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa7" value="<%=rs.getString("paisa7")%>">
                                 </div>
                             </div>
@@ -261,7 +261,7 @@ while(rs.next())
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa8" value="<%=rs.getString("paisa8")%>">
                                 </div>
                             </div>
@@ -273,7 +273,7 @@ while(rs.next())
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa9" value="<%=rs.getString("paisa9")%>">
                                 </div>
                             </div>
@@ -285,7 +285,7 @@ while(rs.next())
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa10" value="<%=rs.getString("paisa10")%>">
                                 </div>
                             </div>

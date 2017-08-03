@@ -28,7 +28,7 @@
         
     
     
-    <form action="${pageContext.servletContext.contextPath}/welcome1" method="get">
+    <form action="${pageContext.servletContext.contextPath}/welcome1" method="post">
         
 <select name="choose">
   <option value="Hotel">Hotel</option>
@@ -44,7 +44,7 @@
   </div>
   <div class="form">
     <h2>Create an account for</h2>
-    <form name="sinup" action="${pageContext.servletContext.contextPath}/sinup" method="get" onsubmit="return validateForm()">
+    <form name="sinup" action="${pageContext.servletContext.contextPath}/sinup" method="post" onsubmit="return validateForm()" id="work">
         
 <select name="choose">
   <option value="Hotel">Hotel</option>
@@ -52,12 +52,12 @@
   <option value="cafe">Resturant/Cafe</option>
 </select>
         <br><br>
-        <input type="text" placeholder="Hotel/Cafe-Name" name="company" />
-        <input type="text" placeholder="Username" name="username" />
-        <input type="email" placeholder="Email Address" name="email" />
-        <input type="password" placeholder="Password" name="password1" />
-        <input type="password" placeholder="Confirm-Password" name="password2" />
-        <input type="tel" placeholder="Phone Number" name="phone" />
+        <input type="text" placeholder="Hotel/Cafe-Name" name="company" required=""/>
+        <input type="text" placeholder="Username" name="username" required=""/>
+        <input type="email" placeholder="Email Address" name="email" required=""/>
+        <input type="password" placeholder="Password" name="password" required=""/>
+        <input type="password" placeholder="Confirm-Password" name="password1" required=""/>
+        <input type="tel" placeholder="Phone Number" name="phone" required=""/>
       <button>Register</button>
     </form>
     <script>
@@ -67,6 +67,7 @@
     
     if (x != y) {
         alert("Password Not Match!!");
+        document.getElementById("work").reset();
         return false;
     
     }
@@ -79,7 +80,7 @@
     
     
   </div>
-  <div class="cta"><a href="#">Forgot your password?</a></div>
+ 
 </div>
  
     <script src="${pageContext.servletContext.contextPath}/assets/js/test.js"></script>

@@ -47,13 +47,15 @@
                     </button>
 
                     <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
-                        <li class="nav-item"><a class="nav-link link" href="#/">OVERVIEW</a></li><li class="nav-item"><a class="nav-link link" href="#/">GALLERY</a></li>
+                     
+                          <li class="nav-item"><a class="nav-link link" href="#">OVERVIEW</a>
                         <li class="nav-item"><a class="nav-link link" href="${pageContext.servletContext.contextPath}/welcome0">LOGIN</a></li><li class="nav-item">
 <form action="${pageContext.servletContext.contextPath}/search" method="post">
+    
   <input type="text" name="search" placeholder="Query... " >
   <input type="submit" value="search" class="btn btn-sm btn-white">
 </form>
-</li>
+
 <style> 
 input[type=text] {
     width: 130px;
@@ -259,10 +261,13 @@ input[type=text]:focus {
             </div>
             <div class="mbr-footer-content col-xs-12 col-md-6 col-lg-3">
                 <h4>Categories</h4>
-                <ul><li><a class="text-white" href="http://www.himalayanglacier.com/">Travel Guide</a></li><li><a class="text-white" href="https://www.ihg.com/crowneplaza/hotels/gb/en/reservation">Top Hotel of Country</a></li><li><a class="text-white" href="https://www.welcomenepal.com/">Rescue and Help</a></li><li><a class="text-white" href="http://www.tourism.gov.np/">Government</a></li><li><a class="text-white" href="#">About Us</a></li></ul>
+                <ul><li><a class="text-white" href="http://www.himalayanglacier.com/" target="_blank">Travel Guide</a></li><li><a class="text-white" <a href="https://www.ihg.com/crowneplaza/hotels/gb/en/reservation" target="_blank">Top Hotel of Country</a>
+                    </li><li><a class="text-white" href="https://www.welcomenepal.com/" target="_blank">Rescue and Help</a></li><li><a class="text-white" href="http://www.tourism.gov.np/" target="_blank">Government</a></li><li>
+                        <a class="text-white" href="${pageContext.servletContext.contextPath}/tej" target="_blank">Tej Saru Magar</a></li>
+                    <li><a class="text-white" href="${pageContext.servletContext.contextPath}/utsav"target="_blank">Utsav luitel</a></li></ul>
             </div>
             <div class="mbr-footer-content col-xs-12 col-md-6 col-lg-3">
-                <p><strong>Contacts</strong><br>sarutezz@gmail.com<br>Phone: +977-9813097199<br>Fax: +1 (0) 000 0000 002<br><br><br><strong>Address</strong><br><br>Sanjaya,Nepal</p>
+                <p><strong>Contacts</strong><br>sarutezz@gmail.com<br>Phone: +977-9813097199<br>Fax: +1 (0) 000 0000 002<br><br><br><strong>Address</strong><br><br>Sanjya,Nepal</p>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3" data-form-type="formoid">
 

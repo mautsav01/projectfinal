@@ -34,7 +34,7 @@ String hotelname=request.getParameter("company");
             <div class="row">
                 <div class="col-xs-12 text-xs-center">
                     <h3 class="mbr-section-title display-2">Cafe Form</h3>
-                    <small class="mbr-section-subtitle">Shape your future web project with sharp design and refine coded functions.</small>
+                    <small class="mbr-section-subtitle">Just fill up the form and make your own webpage.</small>
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@ We will reply you as soon as possible !!</div>
  
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                Cafe-Cover pic:     <input type="file" class="form-control" name="file">
+                                Cafe-Cover pic(Required):     <input type="file" class="form-control" name="file">
                                 </div>
                             </div>
 							
@@ -92,7 +92,7 @@ We will reply you as soon as possible !!</div>
                             </div>
 								<div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Cafe features<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Cafe Features<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="features" >
                                 </div>
                             </div>
@@ -124,7 +124,7 @@ We will reply you as soon as possible !!</div>
 							
 						 <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Food-Pic:     <input type="file" class="form-control" name="file1">
+                                Food-Pic(required):     <input type="file" class="form-control" name="file1">
                                 </div>
                             </div>
 							<br/><br/>
@@ -158,7 +158,7 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa1"  >
                                 </div>
                             </div>
@@ -171,7 +171,7 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa2" >
                                 </div>
                             </div>
@@ -183,7 +183,7 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa3" >
                                 </div>
                             </div>
@@ -195,7 +195,7 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa4" >
                                 </div>
                             </div>
@@ -207,7 +207,7 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa5" >
                                 </div>
                             </div>
@@ -220,7 +220,7 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa6" >
                                 </div>
                             </div>
@@ -232,7 +232,7 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa7" >
                                 </div>
                             </div>
@@ -244,7 +244,7 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa8">
                                 </div>
                             </div>
@@ -256,7 +256,7 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa9">
                                 </div>
                             </div>
@@ -268,7 +268,7 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="paisa10">
                                 </div>
                             </div>					

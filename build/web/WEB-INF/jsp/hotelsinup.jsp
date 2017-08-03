@@ -89,7 +89,7 @@ We will reply you as soon as possible !!</div>
  
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                Hotel-Cover pic:     <input type="file" class="form-control" name="file" >
+                                Hotel-Cover pic(Required):     <input type="file" class="form-control" name="file" >
                                 </div>
                             </div>
 							
@@ -133,7 +133,7 @@ We will reply you as soon as possible !!</div>
 							
 						 <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Hotel's-Garden/Parking:     <input type="file" class="form-control" name="file1">
+                                Hotel's-Garden/Parking(Required):     <input type="file" class="form-control" name="file1">
                                 </div>
                             </div>
 							<br/><br/>
@@ -167,12 +167,12 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="price1" >
                                 </div>
                             </div>
                                  <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="file2">
+                                Room's Picture(Required):     <input type="file" class="form-control" name="file2">
                                 </div>
                             </div>
                                                         
@@ -186,13 +186,13 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="price2">
                                 </div>
                             </div>
                                                            <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="file3">
+                                Room's Picture(Required):     <input type="file" class="form-control" name="file3">
                                 </div>
                             </div>
                         
@@ -204,13 +204,13 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="price3">
                                 </div>
                             </div>
                                                            <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="file4">
+                                Room's Picture(Required):     <input type="file" class="form-control" name="file4">
                                 </div>
                             </div>
                         
@@ -223,13 +223,13 @@ We will reply you as soon as possible !!</div>
                             </div>
 						<div class="col-xs-12 col-md-6">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="form1-0-name">Price in Rs<span class="form-asterisk">*</span></label>
+                                    <label class="form-control-label" for="form1-0-name">Price<span class="form-asterisk">*</span></label>
                                     <input type="text" class="form-control" name="price4">
                                 </div>
                             </div>
                                                            <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="file5">
+                                Room's Picture(Required):     <input type="file" class="form-control" name="file5">
                                 </div>
                             </div>
                         

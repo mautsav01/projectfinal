@@ -82,5 +82,17 @@
     <mvc:resources mapping="/assets/imgs/**" location="/assets/imgs/"/>
     <mvc:resources mapping="/assets/fontss/**" location="/assets/fontss/"/>
     <mvc:resources mapping="images/**" location="/images/"/>
+    <mvc:resources mapping="img/mockup/**" location="/img/mockup/"/>
+    
+    <mvc:resources mapping="img/500*700/**" location="/img/500*700/"/>
      
+    <mvc:resources mapping="img/**" location="/img/"/>
+    
+    <mvc:resources mapping="css/**" location="/css/"/>
+    <mvc:resources mapping="js/**" location="/js/"/>
+    <mvc:resources mapping="js/components/**" location="/js/components/"/>
+    <mvc:resources mapping="vendor/**" location="/vendor/"/>
+    <mvc:resources mapping="vendor/bootstrap/css/**" location="/vendor/bootstrap/css/"/>
+    <mvc:resources mapping="vendor/bootstrap/js/**" location="/vendor/bootstrap/js/"/>
+    <mvc:resources mapping="vendor/simple-line-icon/css/**" location="/vendor/simple-line-icon/css/"/>
 </beans>

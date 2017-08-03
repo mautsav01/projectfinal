@@ -830,5 +830,16 @@ public String cafeone(@RequestParam ("msg") String msg,Model model){
     return("redirect:/welcome2");
     
 }
+@RequestMapping("/utsav")
+public String Utsav(){
+    
+    return "utsav";
+    
+}
+@RequestMapping("/tej")
+public String tej(){
+    return "tej";
+
+}
 
 }

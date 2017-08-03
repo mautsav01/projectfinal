@@ -96,7 +96,7 @@ while(rs.next())
  
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
-                                Hotel-Cover pic:     <input type="file" class="form-control" name="file" >
+                                Hotel-Cover pic(Required):     <input type="file" class="form-control" name="file" >
                                 </div>
                             </div>
 							
@@ -140,7 +140,7 @@ while(rs.next())
 							
 						 <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Hotel's-Garden/Parking:     <input type="file" class="form-control" name="file1">
+                                Hotel's-Garden/Parking(Required):     <input type="file" class="form-control" name="file1">
                                 </div>
                             </div>
 							<br/><br/>
@@ -179,7 +179,7 @@ while(rs.next())
                                 </div>
                             </div>
                                  <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="file2">
+                                Room's Picture(Required):     <input type="file" class="form-control" name="file2">
                                 </div>
                             </div>
                                                         
@@ -199,7 +199,7 @@ while(rs.next())
                             </div>
                                                            <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="file3">
+                                Room's Picture(Required):     <input type="file" class="form-control" name="file3">
                                 </div>
                             </div>
                         
@@ -217,7 +217,7 @@ while(rs.next())
                             </div>
                                                            <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="file4">
+                                Room's Picture(Required):     <input type="file" class="form-control" name="file4">
                                 </div>
                             </div>
                         
@@ -236,7 +236,7 @@ while(rs.next())
                             </div>
                                                            <div class="col-xs-12 col-md-12">
                                 <div class="form-group">
-                                Room's Picture:     <input type="file" class="form-control" name="file5">
+                                Room's Picture(Required):     <input type="file" class="form-control" name="file5">
                                 </div>
                             </div>
                         
